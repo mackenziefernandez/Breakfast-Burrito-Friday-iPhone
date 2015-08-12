@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SchemeUserState</key>
+	<dict>
+		<key>Pods-Breakfast Burrito Friday-SwiftDate.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-Breakfast Burrito Friday-SwiftOverlays.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-Breakfast Burrito Friday-SwiftyJSON.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-Breakfast Burrito Friday.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-Breakfast Burrito FridayTests-SwiftDate.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-Breakfast Burrito FridayTests-SwiftOverlays.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-Breakfast Burrito FridayTests-SwiftyJSON.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-Breakfast Burrito FridayTests.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>020A84C8EC4A9BB2E2731F22</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>20A646160704BFEB84DB5EA0</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>3C10802196F22F1F18A2B4B1</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>508A1C63000DD2ABE8962801</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>674447D10E155265CB26A9AA</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>94FA2924BC123AA1EFB59798</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>9DEFDF98DCF9B58C8896982C</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>CF907CBDEDE85E868710EB08</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+</plist>

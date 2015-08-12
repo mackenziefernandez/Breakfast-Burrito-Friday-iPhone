@@ -1,0 +1,6 @@
+framework module Pods_Breakfast_Burrito_Friday {
+  umbrella header "Pods-Breakfast Burrito Friday-umbrella.h"
+
+  export *
+  module * { export * }
+}
