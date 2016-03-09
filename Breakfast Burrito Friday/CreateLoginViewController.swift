@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Firebase
 
 class CreateLoginViewController: UIViewController {
 
@@ -31,16 +32,16 @@ class CreateLoginViewController: UIViewController {
         createLoginButton.setTitle("Creating user ...", forState: .Normal)
         
         
-        println("Create Login button has been pressed")
+        print("Create Login button has been pressed")
         
-        let ref = Firebase(url: "https://bbfriday.firebaseio.com")
+        let ref = Constants.fireRef
         
         ref.createUser(emailTextField.text, password: passwordTextField.text,
             withValueCompletionBlock: { error, result in
                 
                 if error != nil {
                     // There was an error creating the account
-                    println("There was an error: \(error)")
+                    print("There was an error: \(error)")
                     
                     var errorMessage = "There was an error creating your account"
                     
@@ -59,7 +60,7 @@ class CreateLoginViewController: UIViewController {
                     
                 } else {
                     let uid = result["uid"]! as? String
-                    println("Successfully created user account with uid: \(uid!)")
+                    print("Successfully created user account with uid: \(uid!)")
                     self.createLoginButton.setTitle("Logging in ...", forState: .Normal)
                     
                     // Log the user in after creating the account and add the name
@@ -67,23 +68,24 @@ class CreateLoginViewController: UIViewController {
                         withCompletionBlock: { error, authData in
                             if error != nil {
                                 // There was an error logging in to this account
-                                println("there was an error logging the user in: \(error)")
+                                print("there was an error logging the user in: \(error)")
                                 
-                                var errorMessage = "There was an error while trying to log you in, so let's try again using the email and password you created."
+                                let errorMessage = "There was an error while trying to log you in, so let's try again using the email and password you created."
                                 self.displayAlert("Uh-oh!", message: errorMessage, style: .Alert)
                                 
                                 self.dismissViewControllerAnimated(true, completion: nil)
                                 
                             } else {
                                 // We are now logged in
-                                println("Yay, logged in")
+                                print("Yay, logged in")
                                 // Now add the name to the users section of the database
-                                ref.childByAppendingPath("users/\(uid!)").setValue(["name":self.nameTextField.text], withCompletionBlock: { (error2, result) -> Void in
+                                let nameObj:[NSObject: AnyObject] = ["name": self.nameTextField.text!]
+                                ref.childByAppendingPath("users/\(uid!)").setValue(nameObj, withCompletionBlock: { (error2, result) -> Void in
                                     if error2 != nil {
-                                        println("there was an error adding the name: \(error2)")
+                                        print("there was an error adding the name: \(error2)")
                                     }
                                     else {
-                                        println("name successfully added to database")
+                                        print("name successfully added to database")
                                         
                                         self.dismissViewControllerAnimated(true, completion: nil)
                                         
@@ -106,7 +108,7 @@ class CreateLoginViewController: UIViewController {
     func displayAlert(title:String, message:String, style: UIAlertControllerStyle) {
         // Make an error message alert thingy
         //1. Create the alert controller.
-        var alert = UIAlertController(title: title, message: message, preferredStyle: style)
+        let alert = UIAlertController(title: title, message: message, preferredStyle: style)
         
         //3. Grab the value from the text field, and print it when the user clicks OK.
         alert.addAction(UIAlertAction(title: "OK", style: .Default, handler: nil))

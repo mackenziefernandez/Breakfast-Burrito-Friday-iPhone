@@ -10,11 +10,12 @@ import UIKit
 import SwiftOverlays
 import SwiftDate
 import SwiftyJSON
+import Firebase
 
 class TeamViewController: UIViewController {
     
     // Create a reference to a Firebase location
-    var myRootRef = Firebase(url:"https://bbfriday.firebaseio.com")
+    var myRootRef = Constants.fireRef
     let todayDate = NSDate.today()
     var friday : NSDate?
     
@@ -32,15 +33,15 @@ class TeamViewController: UIViewController {
         self.showWaitOverlay()
         
         friday = thisFriday(todayDate)
-        var fridayString = friday!.toString(format: DateFormat.Custom("YYYY-MM-dd"))
+        let fridayString = friday!.toString(DateFormat.Custom("YYYY-MM-dd"))
         
         myRootRef.childByAppendingPath("orders").queryOrderedByChild("friday").queryEqualToValue(fridayString).observeEventType(.Value, withBlock: { snapshot in
-            println(snapshot)
+            print(snapshot)
             
             //self.setOrders(snapshot)
             
             }, withCancelBlock: { error in
-                println(error.description)
+                print(error.description)
         })
 
         // Do any additional setup after loading the view.
@@ -57,15 +58,6 @@ class TeamViewController: UIViewController {
     
     @IBAction func changeMenuButtonPressed(sender: UIButton) {
         
-    }
-    
-    func thisFriday(referenceDate:NSDate) -> NSDate {
-        if (referenceDate.weekdayName == "Friday") {
-            return referenceDate
-        }
-        else {
-            return thisFriday(referenceDate+1.day)
-        }
     }
     
 }

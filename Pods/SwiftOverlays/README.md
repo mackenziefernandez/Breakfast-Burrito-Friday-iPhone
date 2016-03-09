@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/peterprokop/SwiftOverlays.svg?branch=master)](https://travis-ci.org/peterprokop/SwiftOverlays) ([unfortunately, Travis CI does not support Swift 1.2 yet](https://github.com/travis-ci/travis-ci/issues/3216))
+[![Build Status](https://travis-ci.org/peterprokop/SwiftOverlays.svg?branch=master)](https://travis-ci.org/peterprokop/SwiftOverlays)
 
 # SwiftOverlays
 
@@ -7,7 +7,7 @@ SwiftOverlays is a Swift GUI library for displaying various popups and notificat
 
 ## Features
 
-Currently SwiftOverlays provides 5 ways to notify user:
+SwiftOverlays provides several ways to notify user:
 
 - [x] Wait overlay: a simple overlay with activity indicator
 
@@ -19,21 +19,40 @@ Currently SwiftOverlays provides 5 ways to notify user:
 
 - [x] Overlay with text only
 - [x] Overlay with image and text (can be used with [PPSwiftGifs](https://github.com/peterprokop/PPSwiftGifs) to show custom animated GIF instead of UIActivityIndicatorView)
+- [x] All of the above with blocking any user interaction
 - [x] Notification on top of the status bar, similar to native iOS local/push notifications
 
 ![Notification](https://i.imgflip.com/df5k5.gif)
 
 ## Installation
 
-Just add ```SwiftOverlays.swift``` to your project.
+### Manual
+Just clone and add ```SwiftOverlays.swift``` to your project.
+
+### Cocoapods
+- Make sure that you use latest stable Cocoapods version: `pod --version`
+- If not, update it: `sudo gem install cocoapods`
+- `pod init` in you project root dir
+- `nano Podfile`, add:
+
+```
+pod 'SwiftOverlays', '~> 1.0'
+use_frameworks! 
+``` 
+- Save it: `ctrl-x`, `y`, `enter`
+- `pod update`
+- Open generated `.xcworkspace`
+- Don't forget to import SwiftOverlays: `import SwiftOverlays`!
 
 ## Requirements
 
-- iOS 7.0+
-- Xcode 6.3
-- Swift 1.2 (if you need Swift 1.1, use [swift-1.1 branch](https://github.com/peterprokop/SwiftOverlays/tree/swift-1.1))
+- iOS 7.0+ (8.0+ if you use Cocoapods)
+- Xcode 7.0
+- Swift 2.0 (if you need older swift version, see following branches: [swift-1.1](https://github.com/peterprokop/SwiftOverlays/tree/swift-1.1), [swift-1.2](https://github.com/peterprokop/SwiftOverlays/tree/swift-1.2))
 
 ## Usage
+
+If you're using CocoaPods, import the library with `import SwiftOverlays`
 
 You can use UIViewController convenience methods provided by library:
 
@@ -56,7 +75,28 @@ self.removeAllOverlays()
 
 // Notification on top of the status bar
 UIViewController.showNotificationOnTopOfStatusBar(annoyingNotificationView!, duration: 5)
+
+// Block user interaction
+SwiftOverlays.showBlockingWaitOverlayWithText("This is blocking overlay!")
+
+// Don't forget to unblock!
+SwiftOverlays.removeAllBlockingOverlays()
+
 ```
+
+### Using with UITableViewController
+
+You can't use SwiftOverlays convenience methods directly with UITableViewController - because its view is, well, an UITableView, and overlay will be scrolled along with it.
+
+Instead I suggest using UIViewController instead of UITableViewController and adding UITableView as a subview.
+
+If for some reason you can't use UIViewController, you can do something like:
+```swift
+SwiftOverlays.showCenteredWaitOverlayWithText(self.view.superview!, text: "Please wait...")
+SwiftOverlays.removeAllOverlaysFromView(self.view.superview!)
+```
+
+(but in that case overlay will be added to the superview, and you should obviously do that only if superview is available - for example in viewDidAppear method of your controller.).
 
 ## Contribution
 

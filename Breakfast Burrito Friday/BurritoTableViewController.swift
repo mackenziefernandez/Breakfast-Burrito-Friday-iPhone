@@ -10,10 +10,11 @@ import UIKit
 import SwiftDate
 import SwiftyJSON
 import SwiftOverlays
+import Firebase
 
 extension Array {
     mutating func removeOne <U: Equatable> (object: U) {
-        for i in stride(from: self.count-1, through: 0, by: -1) {
+        for i in (self.count-1).stride(through: 0, by: -1) {
             if let element = self[i] as? U {
                 if element == object {
                     self.removeAtIndex(i)
@@ -23,7 +24,7 @@ extension Array {
         }
     }
     mutating func remove <U: Equatable> (object: U) {
-        for i in stride(from: self.count-1, through: 0, by: -1) {
+        for i in (self.count-1).stride(through: 0, by: -1) {
             if let element = self[i] as? U {
                 if element == object {
                     self.removeAtIndex(i)
@@ -36,7 +37,7 @@ extension Array {
 class BurritoTableViewController: UITableViewController {
     
     // Create a reference to a Firebase location
-    var myRootRef = Firebase(url:"https://bbfriday.firebaseio.com")
+    var myRootRef = Constants.fireRef
     let todayDate = NSDate.today()
     var friday : NSDate?
         var orderDict = [String: [String]]()
@@ -51,16 +52,16 @@ class BurritoTableViewController: UITableViewController {
         
         friday = thisFriday(todayDate)
         
-        var fridayString = friday!.toString(format: DateFormat.Custom("YYYY-MM-dd"))
+        let fridayString = friday!.toString(DateFormat.Custom("YYYY-MM-dd"))
         var fridayPath = myRootRef.childByAppendingPath("orders/")
         
         myRootRef.childByAppendingPath("orders").queryOrderedByChild("friday").queryEqualToValue(fridayString).observeEventType(.Value, withBlock: { snapshot in
-            println(snapshot)
+            print(snapshot)
             
             self.setOrders(snapshot)
             
             }, withCancelBlock: { error in
-                println(error.description)
+                print(error.description)
         })
     }
     
@@ -69,18 +70,18 @@ class BurritoTableViewController: UITableViewController {
         self.orderDict = [String: [String]]()
         
         let json = JSON(snapshot.value)
-        println(json)
+        print(json)
         
         for (key,subJson) in json {
-            println(subJson)
-            var flavor = subJson["flavor"].string
-            var uid = subJson["uid"].string
+            print(subJson)
+            let flavor = subJson["flavor"].string
+            let uid = subJson["uid"].string
             
             // Get users name, add name and flavor to dictionary
-            var path = "users/" + uid!
+            let path = "users/" + uid!
             myRootRef.childByAppendingPath(path).observeEventType(.Value, withBlock: {snapshot2 in
                 let jsonName = JSON(snapshot2.value)
-                var name = jsonName["name"].string
+                let name = jsonName["name"].string
                 
                 if var arr = self.orderDict[flavor!] {
                     arr.append(name!)
@@ -94,21 +95,12 @@ class BurritoTableViewController: UITableViewController {
                 
                 
                 }, withCancelBlock: { error2 in
-                    println("error with finding name: \(error2)")
+                    print("error with finding name: \(error2)")
             })
             
         }
         
         self.removeAllOverlays()
-    }
-    
-    func thisFriday(referenceDate:NSDate) -> NSDate {
-        if (referenceDate.weekdayName == "Friday") {
-            return referenceDate
-        }
-        else {
-            return thisFriday(referenceDate+1.day)
-        }
     }
     
     override func didReceiveMemoryWarning() {
@@ -141,12 +133,12 @@ class BurritoTableViewController: UITableViewController {
         for (key, value) in self.orderDict {
             keyArray.append(key)
         }
-        println("orderDict empty?")
-        println(self.orderDict.isEmpty)
-        var valueArray = self.orderDict[keyArray[indexPath.row]]!
+        print("orderDict empty?")
+        print(self.orderDict.isEmpty)
+        let valueArray = self.orderDict[keyArray[indexPath.row]]!
         
         //let bookDict = fetchedResultsController.objectAtIndexPath(indexPath) as BookModel
-        var cell: BurritoTableViewCell = tableView.dequeueReusableCellWithIdentifier("cell") as! BurritoTableViewCell
+        let cell: BurritoTableViewCell = tableView.dequeueReusableCellWithIdentifier("cell") as! BurritoTableViewCell
         cell.numberOfBurritosLabel.text = "\(self.orderDict[keyArray[indexPath.row]]!.count)" //self.orderDict[indexPath]!.count
         cell.burritoFlavorLabel.text = "\(keyArray[indexPath.row])"
         
@@ -160,7 +152,7 @@ class BurritoTableViewController: UITableViewController {
         //        }
         
         var whoOrderedText = ""
-        for (index, value) in enumerate(valueArray) {
+        for (index, value) in valueArray.enumerate() {
             if index == 0 {
                 whoOrderedText = whoOrderedText + value
             }

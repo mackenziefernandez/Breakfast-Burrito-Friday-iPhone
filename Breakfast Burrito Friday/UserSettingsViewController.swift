@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Firebase
 
 class UserSettingsViewController: UIViewController {
 
@@ -20,7 +21,7 @@ class UserSettingsViewController: UIViewController {
     @IBOutlet weak var changePasswordButton: UIButton!
     
     
-    let ref = Firebase(url: "https://bbfriday.firebaseio.com")
+    let ref = Constants.fireRef
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -70,12 +71,12 @@ class UserSettingsViewController: UIViewController {
         self.changeNameButton.setTitle("Changing ...", forState: .Normal)
         
         // Search for the user with the uid of the current users uid
-        ref.childByAppendingPath("users/" + ref.authData.uid).updateChildValues(["name":newNameTextField.text], withCompletionBlock: {(error:NSError?, ref:Firebase!) in
+        ref.childByAppendingPath("users/" + ref.authData.uid).updateChildValues(["name":newNameTextField.text!], withCompletionBlock: {(error:NSError?, ref:Firebase!) in
             if (error != nil) {
-                println("Data could not be saved.")
+                print("Data could not be saved.")
                 
             } else {
-                println("Data saved successfully!")
+                print("Data saved successfully!")
                 self.changeNameButton.setTitle("Name changed!", forState: .Normal)
                 self.newNameTextField.text = ""
             }
@@ -85,7 +86,7 @@ class UserSettingsViewController: UIViewController {
     @IBAction func changeEmailButtonPressed(sender: UIButton) {
         // Prompt for the current password
         //1. Create the alert controller.
-        var alert = UIAlertController(title: "Enter Your Password", message: "To change your email, you need to provide your password.", preferredStyle: .Alert)
+        let alert = UIAlertController(title: "Enter Your Password", message: "To change your email, you need to provide your password.", preferredStyle: .Alert)
         
         //2. Add the text field. You can configure it however you need.
         alert.addTextFieldWithConfigurationHandler({ (textField) -> Void in
@@ -94,10 +95,10 @@ class UserSettingsViewController: UIViewController {
         
         //3. Grab the value from the text field, and print it when the user clicks OK.
         alert.addAction(UIAlertAction(title: "OK", style: .Default, handler: { (action) -> Void in
-            let textField = alert.textFields![0] as! UITextField
+            let textField = alert.textFields![0] 
 //            println("Text field: \(textField.text)")
             let userPassword = textField.text
-                    self.changeEmailFunction(userPassword)
+                    self.changeEmailFunction(userPassword!)
         }))
         
         alert.addAction(UIAlertAction(title: "Cancel", style: .Cancel, handler: nil))
@@ -108,18 +109,18 @@ class UserSettingsViewController: UIViewController {
     }
     
     func changeEmailFunction(userPassword:NSString) {
-        println("Trying to change the user's email with password: \(userPassword)")
+        print("Trying to change the user's email with password: \(userPassword)")
                 ref.changeEmailForUser(ref.authData.providerData["email"]! as! String, password: userPassword as String,
                     toNewEmail: newEmailTextField.text, withCompletionBlock: { error in
                         if error != nil {
                             // There was an error processing the request
-                            println("Error: \(error)")
+                            print("Error: \(error)")
                         } else {
                             // Email changed successfully
-                            println("Yay, it worked!")
+                            print("Yay, it worked!")
                             
                             // Re-log the user in so we have that new auth data
-                            self.login(self.newEmailTextField.text, userPassword: userPassword as String)
+                            self.login(self.newEmailTextField.text!, userPassword: userPassword as String)
                         }
                 })
     }
@@ -129,10 +130,10 @@ class UserSettingsViewController: UIViewController {
             toNew: newPasswordTextField.text, withCompletionBlock: { error in
                 if error != nil {
                     // There was an error processing the request
-                    println("Error: \(error)")
+                    print("Error: \(error)")
                 } else {
                     // Password changed successfully
-                    println("Yay, it worked!")
+                    print("Yay, it worked!")
                 }
         })
     }
@@ -153,7 +154,7 @@ class UserSettingsViewController: UIViewController {
         
         // Prompt for the current password
         //1. Create the alert controller.
-        var alert = UIAlertController(title: "Enter Your Password", message: "To change your password, you need to provide your old password.", preferredStyle: .Alert)
+        let alert = UIAlertController(title: "Enter Your Password", message: "To change your password, you need to provide your old password.", preferredStyle: .Alert)
         
         //2. Add the text field. You can configure it however you need.
         alert.addTextFieldWithConfigurationHandler({ (textField) -> Void in
@@ -162,10 +163,10 @@ class UserSettingsViewController: UIViewController {
         
         //3. Grab the value from the text field, and print it when the user clicks OK.
         alert.addAction(UIAlertAction(title: "OK", style: .Default, handler: { (action) -> Void in
-            let textField = alert.textFields![0] as! UITextField
+            let textField = alert.textFields![0] 
             //            println("Text field: \(textField.text)")
             let userPassword = textField.text
-            self.changeEmailFunction(userPassword)
+            self.changeEmailFunction(userPassword!)
         }))
         
         alert.addAction(UIAlertAction(title: "Cancel", style: .Cancel, handler: nil))

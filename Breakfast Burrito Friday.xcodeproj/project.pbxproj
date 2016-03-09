@@ -35,9 +35,9 @@
 		59C4A8E51B5F27C800D46B9C /* Team.png in Resources */ = {isa = PBXBuildFile; fileRef = 59C4A8E11B5F27C800D46B9C /* Team.png */; };
 		59C4A8E61B5F27C800D46B9C /* Stats.png in Resources */ = {isa = PBXBuildFile; fileRef = 59C4A8E21B5F27C800D46B9C /* Stats.png */; };
 		59C4A8E81B61313D00D46B9C /* TeamViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59C4A8E71B61313D00D46B9C /* TeamViewController.swift */; };
-		945B1AE8AEE596A01C9FCFAA /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2503D42C9CDB7EFEB0302620 /* libPods.a */; };
-		C450DAB91DD7689B37DC527B /* Pods_Breakfast_Burrito_FridayTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25BAD859BEB6BB2201D19E8A /* Pods_Breakfast_Burrito_FridayTests.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
-		FF9FA3B2F5E3E4CF97465ED4 /* Pods_Breakfast_Burrito_Friday.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 133B1B1E3B5585545AA16C49 /* Pods_Breakfast_Burrito_Friday.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		988FC4591C8E930900D82FC6 /* Pods_Breakfast_Burrito_FridayTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 988FC4581C8E930900D82FC6 /* Pods_Breakfast_Burrito_FridayTests.framework */; };
+		988FC45B1C8F3FDF00D82FC6 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988FC45A1C8F3FDF00D82FC6 /* Constants.swift */; };
+		C450DAB91DD7689B37DC527B /* Pods_Breakfast_Burrito_FridayTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25BAD859BEB6BB2201D19E8A /* Pods_Breakfast_Burrito_FridayTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -92,6 +92,8 @@
 		59C4A8E21B5F27C800D46B9C /* Stats.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Stats.png; sourceTree = "<group>"; };
 		59C4A8E71B61313D00D46B9C /* TeamViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TeamViewController.swift; sourceTree = "<group>"; };
 		7079D70288A083CEAE879C8A /* Pods-Breakfast Burrito FridayTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Breakfast Burrito FridayTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Breakfast Burrito FridayTests/Pods-Breakfast Burrito FridayTests.release.xcconfig"; sourceTree = "<group>"; };
+		988FC4581C8E930900D82FC6 /* Pods_Breakfast_Burrito_FridayTests.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Pods_Breakfast_Burrito_FridayTests.framework; path = "Pods/../build/Debug-iphoneos/Pods_Breakfast_Burrito_FridayTests.framework"; sourceTree = "<group>"; };
+		988FC45A1C8F3FDF00D82FC6 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		A6461A706AACF31AB305697C /* Pods-Breakfast Burrito FridayTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Breakfast Burrito FridayTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Breakfast Burrito FridayTests/Pods-Breakfast Burrito FridayTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -100,9 +102,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				988FC4591C8E930900D82FC6 /* Pods_Breakfast_Burrito_FridayTests.framework in Frameworks */,
 				5948A0F61B4C79D000395FD5 /* ImageIO.framework in Frameworks */,
-				945B1AE8AEE596A01C9FCFAA /* libPods.a in Frameworks */,
-				FF9FA3B2F5E3E4CF97465ED4 /* Pods_Breakfast_Burrito_Friday.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -120,6 +121,7 @@
 		3B3A8F8794F73801405C0743 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				988FC4581C8E930900D82FC6 /* Pods_Breakfast_Burrito_FridayTests.framework */,
 				5948A0F51B4C79D000395FD5 /* ImageIO.framework */,
 				2503D42C9CDB7EFEB0302620 /* libPods.a */,
 				133B1B1E3B5585545AA16C49 /* Pods_Breakfast_Burrito_Friday.framework */,
@@ -145,6 +147,7 @@
 		59A825451AB3AE0E00017ED8 = {
 			isa = PBXGroup;
 			children = (
+				988FC45A1C8F3FDF00D82FC6 /* Constants.swift */,
 				59A825501AB3AE0E00017ED8 /* Breakfast Burrito Friday */,
 				59A825691AB3AE0E00017ED8 /* Breakfast Burrito FridayTests */,
 				59A8254F1AB3AE0E00017ED8 /* Products */,
@@ -279,7 +282,9 @@
 		59A825461AB3AE0E00017ED8 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0610;
+				LastSwiftMigration = 0710;
+				LastSwiftUpdateCheck = 0710;
+				LastUpgradeCheck = 0710;
 				ORGANIZATIONNAME = "Mackenzie Fernandez";
 				TargetAttributes = {
 					59A8254D1AB3AE0E00017ED8 = {
@@ -451,6 +456,7 @@
 				5948A0F81B4C7A2A00395FD5 /* PPSwiftGifs.swift in Sources */,
 				59C4A8E81B61313D00D46B9C /* TeamViewController.swift in Sources */,
 				5935DEA71B2B185E003D0BDF /* MyBurritosViewController.swift in Sources */,
+				988FC45B1C8F3FDF00D82FC6 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -504,6 +510,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -569,8 +576,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
+				);
 				INFOPLIST_FILE = "Breakfast Burrito Friday/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "DragonDev.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "Breakfast Burrito Friday/Breakfast Burrito Friday-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -583,8 +595,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
+				);
 				INFOPLIST_FILE = "Breakfast Burrito Friday/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "DragonDev.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "Breakfast Burrito Friday/Breakfast Burrito Friday-Bridging-Header.h";
 			};
@@ -605,6 +622,7 @@
 				);
 				INFOPLIST_FILE = "Breakfast Burrito FridayTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "DragonDev.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Breakfast Burrito Friday.app/Breakfast Burrito Friday";
 			};
@@ -621,6 +639,7 @@
 				);
 				INFOPLIST_FILE = "Breakfast Burrito FridayTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "DragonDev.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Breakfast Burrito Friday.app/Breakfast Burrito Friday";
 			};

@@ -11,6 +11,7 @@ import UIKit
 import SwiftDate
 import SwiftyJSON
 import SwiftOverlays
+import Firebase
 
 class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
     @IBOutlet weak var burritoPickerView: UIPickerView!
@@ -23,10 +24,10 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
     let burritoArray = ["Chorizo", "Sausage", "Bacon", "Cheese"]//, "Unicorn"]
     var selectedFlavor = "Chorizo"
     
-    let todayDate = NSDate().toUTC()
+    let todayDate = NSDate()
     
     // Create a reference to a Firebase location
-        var myRootRef = Firebase(url:"https://bbfriday.firebaseio.com/")
+    var myRootRef = Constants.fireRef
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -44,7 +45,7 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
             if authData != nil {
                 // Make sure that the user has a name in the database
                 //println(authData.uid)
-                var path = "users/" + authData.uid
+                let path = "users/" + authData.uid
                 self.myRootRef.childByAppendingPath(path).observeEventType(.Value, withBlock: {snapshot2 in
                     let jsonName = JSON(snapshot2.value)
                     
@@ -64,14 +65,14 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
                     
                     
                     }, withCancelBlock: { error2 in
-                        println("error with finding name: \(error2)")
+                        print("error with finding name: \(error2)")
                         
                         // Make an alert to gather the name
                         self.getNameAlert("What should I call you?", message: "I don't know what to call you! What's your name?", style: .Alert)
                 })
             } else {
                 // No user is logged in
-                println("User is not logged in")
+                print("User is not logged in")
                 
                 // Segue (modally) to the login screen
                 //self.performSegueWithIdentifier("loginSegue", sender: self)
@@ -83,7 +84,7 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
     func displayAlert(title:String, message:String, style: UIAlertControllerStyle) {
         // Make an error message alert thingy
         //1. Create the alert controller.
-        var alert = UIAlertController(title: title, message: message, preferredStyle: style)
+        let alert = UIAlertController(title: title, message: message, preferredStyle: style)
         
         //3. Grab the value from the text field, and print it when the user clicks OK.
         alert.addAction(UIAlertAction(title: "OK", style: .Default, handler: nil))
@@ -95,7 +96,7 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
     func getNameAlert(title:String, message:String, style: UIAlertControllerStyle) {
         // Make an error message alert thingy
         //1. Create the alert controller.
-        var alert = UIAlertController(title: title, message: message, preferredStyle: style)
+        let alert = UIAlertController(title: title, message: message, preferredStyle: style)
         
         //2. Add the text field. You can configure it however you need.
         alert.addTextFieldWithConfigurationHandler({ (textField) -> Void in
@@ -103,22 +104,20 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
         
         //3. Grab the value from the text field, and print it when the user clicks OK.
         alert.addAction(UIAlertAction(title: "OK", style: .Default, handler: { (action) -> Void in
-            let textField = alert.textFields![0] as! UITextField
-                        println("Add username: \(textField.text)")
+            let textField = alert.textFields![0] 
+                        print("Add username: \(textField.text)")
             if textField.text == "" {
-                textField.text = "Loser"
+                textField.text = "Unnamed Loser"
             }
             
             // Search for the user with the uid of the current users uid
-            self.myRootRef.childByAppendingPath("users/" + self.myRootRef.authData.uid).updateChildValues(["name":textField.text], withCompletionBlock: {(error:NSError?, ref:Firebase!) in
+            self.myRootRef.childByAppendingPath("users/" + self.myRootRef.authData.uid).updateChildValues(["name":textField.text!], withCompletionBlock: {(error:NSError?, ref:Firebase!) in
                 if (error != nil) {
-                    println("Data could not be saved.")
+                    print("Data could not be saved.")
                 } else {
-                    println("Data saved successfully!")
+                    print("Data saved successfully!")
                 }
             })
-            //let userPassword = textField.text
-            //self.changeEmailFunction(userPassword)
         }))
 
         
@@ -129,15 +128,6 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
-    }
-    
-    func thisFriday(referenceDate:NSDate) -> NSDate {
-        if (referenceDate.weekdayName == "Friday") {
-            return referenceDate
-        }
-        else {
-            return thisFriday(referenceDate+1.day)
-        }
     }
     
     // Tapped View
@@ -160,7 +150,7 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
         selectedFlavor = burritoArray[row]
     }
     
-    func pickerView(pickerView: UIPickerView, viewForRow row: Int, forComponent component: Int, reusingView view: UIView!) -> UIView {
+    func pickerView(pickerView: UIPickerView, viewForRow row: Int, forComponent component: Int, reusingView view: UIView?) -> UIView {
         let pickerLabel = UILabel()
         let titleData = burritoArray[row]
         let myTitle = NSAttributedString(string: titleData, attributes: [NSFontAttributeName:UIFont(name: "RobotoCondensed-Regular", size: 26.0)!, NSForegroundColorAttributeName:UIColor.blackColor()])
@@ -171,29 +161,29 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
     
     @IBAction func burritoMeButtonPressed(sender: UIButton) {
         
-        var gifsRef = myRootRef.childByAppendingPath("fun/gifs")
+        let gifsRef = myRootRef.childByAppendingPath("fun/gifs")
         
         gifsRef.observeSingleEventOfType(.Value, withBlock: { snapshot in
             let jsonGifs = JSON(snapshot.value)
-            println(jsonGifs.count)
+            print(jsonGifs.count)
             var gifURL = ""
             let random = Int(arc4random_uniform(UInt32(jsonGifs.count)) + 1) // Since we are grabbing numbers between 0 and 2
             var i = 1
             for (key, value) in jsonGifs {
                 if (i == random) {
-                    println("random number is \(random)")
-                    println(key)
-                    println(value["url"])
+                    print("random number is \(random)")
+                    print(key)
+                    print(value["url"])
                     gifURL = value["url"].string!
                     let url = NSURL(string: gifURL)
         let data = NSData(contentsOfURL: url!)
-                    self.showImageAndTextOverlay(PPSwiftGifs.animatedImageWithGIFData(data!)!, text: "\nYour burrito is on it's way!")
+//                    self.showImageAndTextOverlay(PPSwiftGifs.animatedImageWithGIFData(data!)!, text: "\nYour burrito is on it's way!")
                 }
                 i += 1
             }
             
             }, withCancelBlock: { error in
-                println(error.description)
+                print(error.description)
         })
         
         
@@ -205,19 +195,16 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
         
         let userid: String = myRootRef.authData.uid as String
         
-        var friday = thisFriday(todayDate)
+        let friday = thisFriday(todayDate)
         
-        //println(friday)
-        println(friday.weekdayName)
-        println(friday.toString(format: DateFormat.Custom("YYYY-MM-dd")))
-        
-        var fridayString = friday.toString(format: DateFormat.Custom("YYYY-MM-dd"))
+        let fridayString = friday.toString(DateFormat.Custom("YYYY-MM-dd"))
         
         let orderPath = "orders/" //+ fridayString
         // Write data to Firebase
         let orderRef = myRootRef.childByAppendingPath(orderPath)
         let orderRef1 = orderRef.childByAutoId()
-        orderRef1.setValue(["orderedDate":todayDate.toShortString() ,"uid":userid, "flavor":selectedFlavor, "friday":fridayString])
+        let theOrder = NSMutableDictionary(objects: [todayDate.toString(DateFormat.Custom("YY-MM-dd"))!, userid, selectedFlavor, fridayString!], forKeys: ["orderedDate", "uid", "flavor", "friday"])
+        orderRef1.setValue(theOrder)
         
         
         // Segue to see the orders they made (and can edit)

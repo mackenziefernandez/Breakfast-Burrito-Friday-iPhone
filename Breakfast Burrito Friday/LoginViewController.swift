@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Firebase
 
 class LoginViewController: UIViewController {
 
@@ -15,7 +16,7 @@ class LoginViewController: UIViewController {
     
     @IBOutlet weak var loginButton: UIButton!
     
-    let ref = Firebase(url: "https://bbfriday.firebaseio.com")
+    let ref = Constants.fireRef
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -45,7 +46,7 @@ class LoginViewController: UIViewController {
         // Gather the user's email in an alert and then call the send email function
         // Make an error message alert thingy
         //1. Create the alert controller.
-        var alert = UIAlertController(title: "Forgot Password", message: "Please enter your email", preferredStyle: .Alert)
+        let alert = UIAlertController(title: "Forgot Password", message: "Please enter your email", preferredStyle: .Alert)
         
         //2. Add the text field. You can configure it however you need.
         alert.addTextFieldWithConfigurationHandler({ (textField) -> Void in
@@ -53,15 +54,15 @@ class LoginViewController: UIViewController {
         
         //3. Grab the value from the text field, and print it when the user clicks OK.
         alert.addAction(UIAlertAction(title: "Done", style: .Default, handler: { (action) -> Void in
-            let textField = alert.textFields![0] as! UITextField
-            println("New Password for: \(textField.text)")
+            let textField = alert.textFields![0] 
+            print("New Password for: \(textField.text)")
             
             self.ref.resetPasswordForUser(textField.text, withCompletionBlock: { error in
                 if (error != nil) {
-                    println("error")
+                    print("error")
                 }
                 else {
-                    println("no error")
+                    print("no error")
                     self.displayAlert("New Password Sent", message: "Your new and shiny password has been sent! Check your email :)", style: .Alert)
                 }
             })
@@ -92,8 +93,8 @@ class LoginViewController: UIViewController {
                 
                 if error != nil {
                     // There was an error logging in to this account
-                    println("There was an error")
-                    println(error)
+                    print("There was an error")
+                    print(error)
                     
                     var errorMessage = "Wow, nice job. I'm giving you a default error message because I don't even know what you did wrong."
                     if error.code == -6 {
@@ -107,7 +108,7 @@ class LoginViewController: UIViewController {
                     
                 } else {
                     // We are now logged in
-                    println("Now logged in")
+                    print("Now logged in")
                     
                     self.dismissViewControllerAnimated(true, completion: nil)
                 }
@@ -117,7 +118,7 @@ class LoginViewController: UIViewController {
     func displayAlert(title:String, message:String, style: UIAlertControllerStyle) {
         // Make an error message alert thingy
         //1. Create the alert controller.
-        var alert = UIAlertController(title: title, message: message, preferredStyle: style)
+        let alert = UIAlertController(title: title, message: message, preferredStyle: style)
         
         //3. Grab the value from the text field, and print it when the user clicks OK.
         alert.addAction(UIAlertAction(title: "OK", style: .Default, handler: nil))

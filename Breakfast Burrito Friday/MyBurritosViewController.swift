@@ -10,6 +10,7 @@ import UIKit
 import SwiftDate
 import SwiftyJSON
 import SwiftOverlays
+import Firebase
 
 
 class MyBurritosViewController: UIViewController {
@@ -18,7 +19,7 @@ class MyBurritosViewController: UIViewController {
     @IBOutlet weak var totalBurritoLabel: UILabel!
     @IBOutlet weak var totalBurritosView: UIView!
     
-    var myRootRef = Firebase(url:"https://bbfriday.firebaseio.com/")
+    var myRootRef = Constants.fireRef
     let todayDate = NSDate.today()
     var friday : NSDate?
     var keyArray = [String]()
@@ -51,7 +52,7 @@ class MyBurritosViewController: UIViewController {
                 self.getOrders(authData.uid)
             } else {
                 // No user is logged in
-                println("User is not logged in")
+                print("User is not logged in")
                 
                 // Segue (modally) to the login screen
                 self.dismissViewControllerAnimated(true, completion: nil)
@@ -69,7 +70,7 @@ class MyBurritosViewController: UIViewController {
     }
     
     func getOrders(userID : String) {
-        var fridayString = friday!.toString(format: DateFormat.Custom("YYYY-MM-dd"))
+        var fridayString = friday!.toString(DateFormat.Custom("YYYY-MM-dd"))
         var ordersPath = myRootRef.childByAppendingPath("orders")
         
         // Get all the burritos ordered by user
@@ -78,7 +79,7 @@ class MyBurritosViewController: UIViewController {
                 self.getAllBurritos(snapshot)
             
             }, withCancelBlock: { error in
-                println(error.description)
+                print(error.description)
         })
     }
     
@@ -93,13 +94,13 @@ class MyBurritosViewController: UIViewController {
         for (key, value) in list {
             //println("List in friday view")
             
-            if (value["friday"].string! == friday!.toString(format: DateFormat.Custom("YYYY-MM-dd"))) {
+            if (value["friday"].string! == friday!.toString(DateFormat.Custom("YYYY-MM-dd"))) {
                 //println(value)
                 
-                var label = UILabel(frame: CGRectMake(self.thisFridayScrollView.bounds.origin.x + 5, self.thisFridayScrollView.bounds.origin.y + CGFloat(count*20), 100, 21))
+                let label = UILabel(frame: CGRectMake(self.thisFridayScrollView.bounds.origin.x + 5, self.thisFridayScrollView.bounds.origin.y + CGFloat(count*20), 100, 21))
                 label.text = value["flavor"].string
                 
-                var button = UIButton.buttonWithType(UIButtonType.System) as! UIButton
+                let button = UIButton(type: UIButtonType.System)
                 button.frame = CGRectMake(self.thisFridayScrollView.bounds.origin.x + 5 + 100, self.thisFridayScrollView.bounds.origin.y + CGFloat(count*20), 200, 21)
                 button.setTitle("Cancel", forState: .Normal)
                 button.addTarget(self, action: "buttonAction:", forControlEvents: UIControlEvents.TouchUpInside)
@@ -116,10 +117,10 @@ class MyBurritosViewController: UIViewController {
     }
     
     func buttonAction(sender:UIButton!) {
-        var path = "orders/"// + friday!.toString(format: DateFormat.Custom("YYYY-MM-dd"))
+        let path = "orders/"// + friday!.toString(format: DateFormat.Custom("YYYY-MM-dd"))
         // Delete the burrito order that has that key
         myRootRef.childByAppendingPath(path).childByAppendingPath(keyArray[sender.tag]).removeValueWithCompletionBlock({ error in
-            println(error)
+            print(error)
         })
     }
     
@@ -132,17 +133,17 @@ class MyBurritosViewController: UIViewController {
             view.removeFromSuperview()
         }
         
-        var allOrdersJson = JSON(snapshot.value)
+        let allOrdersJson = JSON(snapshot.value)
         self.totalBurritoLabel.text = "\(snapshot.childrenCount)"
         var tag = 1
         
-        for (key:String, subJson: JSON) in allOrdersJson {
+        for (key, subJson): (String, JSON) in allOrdersJson {
             //println(subJson)
             
             // Separate out the ones for this friday and those not
             
 
-                    var flavor = subJson["flavor"].string!
+                    let flavor = subJson["flavor"].string!
 
                     if totalsDict[flavor] != nil {
                         // Flavor is already in the dictionary
@@ -160,10 +161,10 @@ class MyBurritosViewController: UIViewController {
                         totalsDict[flavor] = [tag, 1]
                         
                         // Add a label for this flavor and the number (and the percent)
-                        var label = UILabel(frame: CGRectMake(self.totalBurritosView.bounds.origin.x, self.totalBurritosView.bounds.origin.y + CGFloat(tag*20), 300, 21))
+                        let label = UILabel(frame: CGRectMake(self.totalBurritosView.bounds.origin.x, self.totalBurritosView.bounds.origin.y + CGFloat(tag*20), 300, 21))
                         label.tag = tag
                         tag += 1
-                        var percentText = 100*1/snapshot.childrenCount
+                        let percentText = 100*1/snapshot.childrenCount
                         label.text = "\(flavor): \(1) (\(CGFloat(percentText))%)"
                         
                         self.totalBurritosView.addSubview(label)
@@ -178,22 +179,13 @@ class MyBurritosViewController: UIViewController {
         // Loop through to find all the elements with tags from the dictionary
         // Update the labels
         for (key, array) in totalsDict {
-            var theLabel : UILabel = self.totalBurritosView.viewWithTag(array[0]) as! UILabel
-            var percentText = 100*(array[1])/totalBurritosOrdered
+            let theLabel : UILabel = self.totalBurritosView.viewWithTag(array[0]) as! UILabel
+            let percentText = 100*(array[1])/totalBurritosOrdered
             theLabel.text = "\(key): \(array[1]) (\(CGFloat(percentText))%)"
         }
         
         self.removeAllOverlays()
         
-    }
-    
-    func thisFriday(referenceDate:NSDate) -> NSDate {
-        if (referenceDate.weekdayName == "Friday") {
-            return referenceDate
-        }
-        else {
-            return thisFriday(referenceDate+1.day)
-        }
     }
     
 }

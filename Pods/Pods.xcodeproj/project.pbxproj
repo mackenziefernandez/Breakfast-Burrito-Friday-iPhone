@@ -7,791 +7,831 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0CC2549C3E036A1E3E5CF0F6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A49518D923DB15C584B038F9 /* Foundation.framework */; };
-		0D3772FBF2573577E9FF0ED7 /* Pods-Breakfast Burrito FridayTests-SwiftOverlays-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0CBEC680333E3829559868E7 /* Pods-Breakfast Burrito FridayTests-SwiftOverlays-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		0F4DEE997645BA022BED61ED /* SwiftDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E48CE142805E3B376759D6D /* SwiftDate.swift */; };
-		193D3E4D4EAFE4068242EF45 /* Pods-Breakfast Burrito Friday-SwiftyJSON-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = ACF55FED50CE932AD6CBDB65 /* Pods-Breakfast Burrito Friday-SwiftyJSON-dummy.m */; };
-		1F353A57BCCC24C9E53493A9 /* Pods-Breakfast Burrito Friday-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5803373C32670559489459F3 /* Pods-Breakfast Burrito Friday-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		25EE424027D4A730B0326D64 /* Pods-Breakfast Burrito Friday-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D1DE6B18CE62F96F7AB39496 /* Pods-Breakfast Burrito Friday-dummy.m */; };
-		2C1C17760CB4C2357BC89368 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81AA74F45B3B42A6C0973F1A /* SwiftyJSON.swift */; };
-		634B97787D9D8CD1389D4E22 /* Pods-Breakfast Burrito FridayTests-SwiftyJSON-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A974041C69B3A3421E35E17B /* Pods-Breakfast Burrito FridayTests-SwiftyJSON-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		65A2BE4C3C0E05DD4A8740B9 /* Pods-Breakfast Burrito FridayTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5988F671F5C21542881F48EE /* Pods-Breakfast Burrito FridayTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		66D6EDF4AA3C00AE85730A6B /* Pods-Breakfast Burrito Friday-SwiftOverlays-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9D559E0E2E106774F2792272 /* Pods-Breakfast Burrito Friday-SwiftOverlays-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6AADE7F02675E5BD729EC073 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A49518D923DB15C584B038F9 /* Foundation.framework */; };
-		7755B2D1D0D4C625ED7C4224 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A49518D923DB15C584B038F9 /* Foundation.framework */; };
-		793E540E083ADF65CA596CC6 /* Pods-Breakfast Burrito FridayTests-SwiftOverlays-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CB2EB7750C32FCFA81D64304 /* Pods-Breakfast Burrito FridayTests-SwiftOverlays-dummy.m */; };
-		9D85C726B4BC8DADD01D2453 /* SwiftDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E48CE142805E3B376759D6D /* SwiftDate.swift */; };
-		9F973D793A401113CF9FC2A1 /* Pods-Breakfast Burrito FridayTests-SwiftDate-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 350B663C5D07561BC3D06451 /* Pods-Breakfast Burrito FridayTests-SwiftDate-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A1D3FA698903497CCD8B794C /* Pods-Breakfast Burrito Friday-SwiftOverlays-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 557C0E6BA401EA74B9AD4D07 /* Pods-Breakfast Burrito Friday-SwiftOverlays-dummy.m */; };
-		A5EC06AE525A6CFB2318B255 /* Pods-Breakfast Burrito FridayTests-SwiftDate-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A86DDDC5A8FC18549A6CE1D /* Pods-Breakfast Burrito FridayTests-SwiftDate-dummy.m */; };
-		AA9A177CB1247E973370F976 /* Pods-Breakfast Burrito FridayTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F286553DD5397CB2DBF252A /* Pods-Breakfast Burrito FridayTests-dummy.m */; };
-		B8E54CE2793B52C413C2D853 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A49518D923DB15C584B038F9 /* Foundation.framework */; };
-		BD98C62E4B73706BF094479D /* SwiftOverlays.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE19CCD8EC205DE1437B8CF3 /* SwiftOverlays.swift */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		BFBEA9D520F2EE3241475C12 /* Pods-Breakfast Burrito Friday-SwiftDate-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 20040D0F1B2E4D95C47D6E57 /* Pods-Breakfast Burrito Friday-SwiftDate-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C5E84F9AE8BAB48CF9CA5335 /* Pods-Breakfast Burrito Friday-SwiftyJSON-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = EE90B151248FF45BBB397127 /* Pods-Breakfast Burrito Friday-SwiftyJSON-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C7F17DDB48B250D19A787F27 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A49518D923DB15C584B038F9 /* Foundation.framework */; };
-		CAB958DF2A2BAC59CAFCD61F /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81AA74F45B3B42A6C0973F1A /* SwiftyJSON.swift */; };
-		CB4830900DFFE00A490F92B1 /* Pods-Breakfast Burrito FridayTests-SwiftyJSON-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F598DCED51B118694B5491E /* Pods-Breakfast Burrito FridayTests-SwiftyJSON-dummy.m */; };
-		D450D4A4E8C8002D04A28F87 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A49518D923DB15C584B038F9 /* Foundation.framework */; };
-		DB5767E2B1335C0536AA1E02 /* SwiftOverlays.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE19CCD8EC205DE1437B8CF3 /* SwiftOverlays.swift */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		E1ADB7611FD99A42C88EFEFC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A49518D923DB15C584B038F9 /* Foundation.framework */; };
-		E6D1091E195A2CFBA972A80A /* Pods-Breakfast Burrito Friday-SwiftDate-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B15780D69817C57B8DE441D /* Pods-Breakfast Burrito Friday-SwiftDate-dummy.m */; };
-		FC1791219A8C7B75C4BEA77B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A49518D923DB15C584B038F9 /* Foundation.framework */; };
+		012A7E018F3D34F159894EBD7EACACF9 /* Empty.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A915F37A9D23564E1F6B1378C742ED0 /* Empty.m */; };
+		028B8F620B5C112D8D45C1E064F1665A /* NSTimeZone+SwiftDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A98FFCEBA78892E3733058A2AE963A70 /* NSTimeZone+SwiftDate.swift */; };
+		0AC2F1CB6E41AAC1F26656F9D97E3C45 /* DateInRegion+Comparisons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A6D51E5063A467F6835F7074EFF292 /* DateInRegion+Comparisons.swift */; };
+		0BEC241E1D24D97DAF30E384F49D73E7 /* DateInRegion+StartEnd.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A2AF453F7BAE062F11D1DD9AF0978A0 /* DateInRegion+StartEnd.swift */; };
+		11EFBC8269DDA20C01F1B13F266FB90F /* NSCalendar+SwiftDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06ECE3A21F55B82A2727EA58DB37D725 /* NSCalendar+SwiftDate.swift */; };
+		1327BCA330A49BB1C68C43CE634AAD02 /* NSDateInterval.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1CE1CA4DD3EA9DDE32C9DA230B1F8AE /* NSDateInterval.swift */; };
+		191DE2EB9A35585AE0A88BA9F833A1F4 /* FTransactionResult.h in Headers */ = {isa = PBXBuildFile; fileRef = 8EFFA9DB3AB0BAAB71E2C8FA36C5FD50 /* FTransactionResult.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1C04A7CD5B70C4561F6D98C882731C65 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6204446BD9150A17B12E81B4A6F9CA8 /* Security.framework */; };
+		1C3EF85CD30E6FF2E51471BD5B3CEB29 /* Firebase.h in Headers */ = {isa = PBXBuildFile; fileRef = 401EBE57E44B58B52D448565793876E9 /* Firebase.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1D925BB011B04DDED982C7946571A67A /* FAuthType.h in Headers */ = {isa = PBXBuildFile; fileRef = 375481D7A8CF4AAE287008E74D1F9D63 /* FAuthType.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1D9D7FF5237C8CC91EF58DC45AC274FB /* Firebase-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E281415854871673B3264F3891DB8F88 /* Firebase-dummy.m */; };
+		239B10F388840841389B7F09648735B1 /* FEventType.h in Headers */ = {isa = PBXBuildFile; fileRef = 73E4CC0C6702370F5F1A4D216AC0D677 /* FEventType.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2F1496011DBBB75777645194AAAFE92D /* FirebaseApp.h in Headers */ = {isa = PBXBuildFile; fileRef = 8C3C90862A44687DDF41B1411AE5D6B7 /* FirebaseApp.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3CCD7EC2397DD4F8F37E7E10180F3C5D /* DateInRegion+Operations.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4A5897CCF701FEDA4425B09DBA5FDA6 /* DateInRegion+Operations.swift */; };
+		3F365B737AE85566906FA3A75947C414 /* NSLocale+SwiftDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1403959EC20D3477B826CE333B7B365 /* NSLocale+SwiftDate.swift */; };
+		4176C5A050F2C584AFE2252A3A3CD1AF /* Pods-Breakfast Burrito FridayTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 553AFBC1C587D1B626266DE0BFD2189B /* Pods-Breakfast Burrito FridayTests-dummy.m */; };
+		4271CD8B46E714F19B5E7A3D0F1B1917 /* NSDate+SwiftDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA77BD72D630EAD1D64EF437C215809E /* NSDate+SwiftDate.swift */; };
+		4B0EFAAA29109D9A705A27EFFA10FAE2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77C49D928448B31FB9A7D5AE5C8D6C4E /* Foundation.framework */; };
+		4BA0983B7D22D70473483F196332836C /* SwiftyJSON-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = ECEA020944F43A9DCF5DF8EB6E5DA476 /* SwiftyJSON-dummy.m */; };
+		4D75CF0089B20355B17A851513C4A002 /* FQuery.h in Headers */ = {isa = PBXBuildFile; fileRef = 62D5DE9ED21910502A60A3DA1C33A234 /* FQuery.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4F0B4E308F763D8B830FCF7521BF8109 /* Dictionary+SwiftDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B49332553095ABEE120C25275BC28D7 /* Dictionary+SwiftDate.swift */; };
+		5A0890EE4D628D67022B2B7CF8F89D52 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77C49D928448B31FB9A7D5AE5C8D6C4E /* Foundation.framework */; };
+		5A895C0BD991742E31B8B1610B6114AE /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BCD570981D974F2DBA6B01F11B8CE7D /* SwiftyJSON.swift */; };
+		60F9139BDD38565B78214C4FC5F5729D /* Firebase-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C9128158B7C79EB4679E1C856956121F /* Firebase-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		62D39CE5CAA592FA0B2500389850B331 /* SwiftOverlays-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DF09A2292534DC3848E64C0DF78556AE /* SwiftOverlays-dummy.m */; };
+		63D7C9932B465BA5537A7AFB06E2D027 /* NSTimeInterval+SwiftDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A033D4FD528D880DB0A4FD337DA6559 /* NSTimeInterval+SwiftDate.swift */; };
+		6646DA26298257396C7FFE141BB84CC3 /* FirebaseServerValue.h in Headers */ = {isa = PBXBuildFile; fileRef = E1E2ED0BD9B789EA20EE28D9A98D977D /* FirebaseServerValue.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6EC8E7D570FE4657328EAD248A4A4C01 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77C49D928448B31FB9A7D5AE5C8D6C4E /* Foundation.framework */; };
+		7918E1602AEB2EA4CA32BBB0F56E31D6 /* SwiftOverlays.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E7390382B3AA5AB2BF6A4E3B979D7BA /* SwiftOverlays.swift */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		7E1D6C03C812E0C4C9E836FBC3E401D4 /* Pods-Breakfast Burrito Friday-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 117F938195547A752C9C04DA110D94E2 /* Pods-Breakfast Burrito Friday-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		80532B893C1492427B21E451109F4139 /* DateInRegion+NSDatePort.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BB9075F4C4A8CB5E830867E76D220B3 /* DateInRegion+NSDatePort.swift */; };
+		81226B463B2970C0A19B3A1DEC7F1149 /* SwiftyJSON-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6CA69B68D163E8B649F0C8273CCA9D0F /* SwiftyJSON-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		83DF3490869B474CB566D0FBB811EF16 /* NSDateComponents+SwiftDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF058CFD4A2C7F396E4D5ADFA008987 /* NSDateComponents+SwiftDate.swift */; };
+		884780CCEC6F7251E7148AD9A2282538 /* SwiftOverlays-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9FEF2680E3A6BBE2200AE8D416D98952 /* SwiftOverlays-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		89713D383E086CA3145190AAAD9C2B83 /* DateInRegion+Components.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDCDB0D4FC1C42D7EE46DF9CC0E3E8CD /* DateInRegion+Components.swift */; };
+		96FC7981E0D0AADEEFFC87EEEDE7215E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77C49D928448B31FB9A7D5AE5C8D6C4E /* Foundation.framework */; };
+		C1200A14AB9A4C90D0E7B8CDA85D8F38 /* SwiftDate-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B0F5857F6B534348F7ABEC252F49614 /* SwiftDate-dummy.m */; };
+		C23FCF31260D47CEC1494A292DAA1A1E /* FAuthData.h in Headers */ = {isa = PBXBuildFile; fileRef = F7725776C9B337915A35BEE047C9C466 /* FAuthData.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C79F01AD1E5C46CD45FAF70241EE975F /* DateInRegion+Equations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64FAC4088C9A334B68A8416974E72F06 /* DateInRegion+Equations.swift */; };
+		CCEEFC8D87792279A4DB3E0337CCA93E /* DateInRegion+Formatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 969B98FA93E4353C97D84C5262F42ECF /* DateInRegion+Formatter.swift */; };
+		CD2A2A3600F845028D88CED9848CA2B0 /* DateInRegion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76E44AECA16CB05156A63023056D65D1 /* DateInRegion.swift */; };
+		CDEB25C47EACECB539008CC1DBF78482 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77C49D928448B31FB9A7D5AE5C8D6C4E /* Foundation.framework */; };
+		D169A5B5A9C97C3D2ED612A1CE7CDF93 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77C49D928448B31FB9A7D5AE5C8D6C4E /* Foundation.framework */; };
+		DB05A9DD8244D10C28B6915C514AE15F /* FMutableData.h in Headers */ = {isa = PBXBuildFile; fileRef = C39CBDDE47939FEEECDCF12F238148DE /* FMutableData.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E1A883FEBDEED9B85D90D6BE2080F218 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6166BE40C18BC6BF0EED92CAB212EC33 /* SystemConfiguration.framework */; };
+		E1C16E6AE32FAA942AEABADC7C046F75 /* NSDateFormatter+SwiftDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93F5BC098C4443D107B209DBC608055B /* NSDateFormatter+SwiftDate.swift */; };
+		E3FBB5B462A14E8ACC9B340227DE4BE1 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60F85758B54CB0D843A3E97DFFB2F21F /* CFNetwork.framework */; };
+		E60FA42EEC3ECC48701DB55986D25D69 /* FConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = 91B2D5B22C7F6DBDCD00D93C47882C32 /* FConfig.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E8B534D15D2B25919ACD898217266891 /* FDataSnapshot.h in Headers */ = {isa = PBXBuildFile; fileRef = C4086C9420D237A71D985D727E46AD5D /* FDataSnapshot.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F10652E469D5F43999880CA9592AC57E /* Pods-Breakfast Burrito Friday-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D73A9CBF59C7B9370837A2DB031F3E8 /* Pods-Breakfast Burrito Friday-dummy.m */; };
+		F63506072B2B5B516682ECE3130E244F /* SwiftDate-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 678200ADABD40C7A843DBC99D8B3B62D /* SwiftDate-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F667521933AEE439B10E7EEEE28AB3A3 /* Region.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27973C0C9B05C72DEACFA04C856FD966 /* Region.swift */; };
+		F831015561BE6158F4DAABF543B13511 /* Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C60DAD0DDB6C777820582C78E13F0F21 /* Additions.swift */; };
+		F869854ED104CD7FE281131A44005C36 /* Pods-Breakfast Burrito FridayTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FBC18675ECE954AC733BF61366018D98 /* Pods-Breakfast Burrito FridayTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		4159C4599CAC6D265180C695 /* PBXContainerItemProxy */ = {
+		254C6A4867083D4B3C77924C46DEC774 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 4B6C58BF8CAA30D77B4DA090 /* Project object */;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = CF907CBDEDE85E868710EB08;
-			remoteInfo = "Pods-Breakfast Burrito FridayTests-SwiftOverlays";
+			remoteGlobalIDString = B7AC9326D819482593FE118E915409D7;
+			remoteInfo = Firebase;
 		};
-		64CCDA74B035D724135949DE /* PBXContainerItemProxy */ = {
+		3626BCF0E0257D4D71B16435EEDF68D2 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 4B6C58BF8CAA30D77B4DA090 /* Project object */;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 94FA2924BC123AA1EFB59798;
-			remoteInfo = "Pods-Breakfast Burrito Friday-SwiftyJSON";
+			remoteGlobalIDString = EE4A35A3E58CD8CC4B24DE8CDC4A26D7;
+			remoteInfo = SwiftyJSON;
 		};
-		657BE753B00F80FA9EA07A33 /* PBXContainerItemProxy */ = {
+		55B3AA7D143139238D51014D3104D6D9 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 4B6C58BF8CAA30D77B4DA090 /* Project object */;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 674447D10E155265CB26A9AA;
-			remoteInfo = "Pods-Breakfast Burrito FridayTests-SwiftDate";
+			remoteGlobalIDString = B8535138ECA12A64197B2AF2AEF2E9DA;
+			remoteInfo = SwiftOverlays;
 		};
-		736A34E2E59E8D7A1D1F044E /* PBXContainerItemProxy */ = {
+		6DED078680DEE47C21F133372FAC544A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 4B6C58BF8CAA30D77B4DA090 /* Project object */;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 20A646160704BFEB84DB5EA0;
-			remoteInfo = "Pods-Breakfast Burrito Friday-SwiftOverlays";
+			remoteGlobalIDString = DCDA167B99C091CD8B6414E60DA44519;
+			remoteInfo = SwiftDate;
 		};
-		88D2241021E3762F7C253BCE /* PBXContainerItemProxy */ = {
+		8A868CB1CF05DE2CA2A287189992A092 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 4B6C58BF8CAA30D77B4DA090 /* Project object */;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 508A1C63000DD2ABE8962801;
-			remoteInfo = "Pods-Breakfast Burrito Friday-SwiftDate";
+			remoteGlobalIDString = EE4A35A3E58CD8CC4B24DE8CDC4A26D7;
+			remoteInfo = SwiftyJSON;
 		};
-		AA7F3CA3D30DC58435B927AE /* PBXContainerItemProxy */ = {
+		8D9147EA4F22CC08E039F51D4CC6503B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 4B6C58BF8CAA30D77B4DA090 /* Project object */;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 020A84C8EC4A9BB2E2731F22;
-			remoteInfo = "Pods-Breakfast Burrito FridayTests-SwiftyJSON";
+			remoteGlobalIDString = B8535138ECA12A64197B2AF2AEF2E9DA;
+			remoteInfo = SwiftOverlays;
+		};
+		DF1E32102B16ED2748CCE5F4068FBB5B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DCDA167B99C091CD8B6414E60DA44519;
+			remoteInfo = SwiftDate;
+		};
+		F67C9C453EE62A43243005C8C8B853D9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B7AC9326D819482593FE118E915409D7;
+			remoteInfo = Firebase;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		04542FB641D72DB4E34FD70F /* Pods-Breakfast Burrito Friday-SwiftyJSON.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-Breakfast Burrito Friday-SwiftyJSON.modulemap"; sourceTree = "<group>"; };
-		09D4E7A4DAA4E3FDB309BBD9 /* Pods-Breakfast Burrito Friday-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Breakfast Burrito Friday-acknowledgements.plist"; sourceTree = "<group>"; };
-		0CA8A1A6C8FA8ACD0B573CFA /* Pods-Breakfast Burrito FridayTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Breakfast Burrito FridayTests-frameworks.sh"; sourceTree = "<group>"; };
-		0CBEC680333E3829559868E7 /* Pods-Breakfast Burrito FridayTests-SwiftOverlays-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Pods-Breakfast Burrito FridayTests-SwiftOverlays-umbrella.h"; path = "../Pods-Breakfast Burrito FridayTests-SwiftOverlays/Pods-Breakfast Burrito FridayTests-SwiftOverlays-umbrella.h"; sourceTree = "<group>"; };
-		0F286553DD5397CB2DBF252A /* Pods-Breakfast Burrito FridayTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Breakfast Burrito FridayTests-dummy.m"; sourceTree = "<group>"; };
-		1613248A2BD178AEF509D436 /* Pods-Breakfast Burrito FridayTests-SwiftyJSON-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Breakfast Burrito FridayTests-SwiftyJSON-Private.xcconfig"; path = "../Pods-Breakfast Burrito FridayTests-SwiftyJSON/Pods-Breakfast Burrito FridayTests-SwiftyJSON-Private.xcconfig"; sourceTree = "<group>"; };
-		17AA942C1C1BED4109B279FE /* Pods-Breakfast Burrito Friday-SwiftyJSON.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Breakfast Burrito Friday-SwiftyJSON.xcconfig"; sourceTree = "<group>"; };
-		192FBB4A7271E0641F943937 /* Pods-Breakfast Burrito FridayTests-SwiftOverlays.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Breakfast Burrito FridayTests-SwiftOverlays.xcconfig"; path = "../Pods-Breakfast Burrito FridayTests-SwiftOverlays/Pods-Breakfast Burrito FridayTests-SwiftOverlays.xcconfig"; sourceTree = "<group>"; };
-		1E641DA788A73D5699F81063 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		20040D0F1B2E4D95C47D6E57 /* Pods-Breakfast Burrito Friday-SwiftDate-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Breakfast Burrito Friday-SwiftDate-umbrella.h"; sourceTree = "<group>"; };
-		22FC837A42E73A1E62B146D4 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		29560A0348688304D25D5A48 /* Pods-Breakfast Burrito Friday-SwiftOverlays.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-Breakfast Burrito Friday-SwiftOverlays.modulemap"; sourceTree = "<group>"; };
-		2B15780D69817C57B8DE441D /* Pods-Breakfast Burrito Friday-SwiftDate-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Breakfast Burrito Friday-SwiftDate-dummy.m"; sourceTree = "<group>"; };
-		2C5D6D8AB698ACEB5DA1D69B /* Pods-Breakfast Burrito FridayTests-SwiftyJSON-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Pods-Breakfast Burrito FridayTests-SwiftyJSON-prefix.pch"; path = "../Pods-Breakfast Burrito FridayTests-SwiftyJSON/Pods-Breakfast Burrito FridayTests-SwiftyJSON-prefix.pch"; sourceTree = "<group>"; };
-		350B663C5D07561BC3D06451 /* Pods-Breakfast Burrito FridayTests-SwiftDate-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Pods-Breakfast Burrito FridayTests-SwiftDate-umbrella.h"; path = "../Pods-Breakfast Burrito FridayTests-SwiftDate/Pods-Breakfast Burrito FridayTests-SwiftDate-umbrella.h"; sourceTree = "<group>"; };
-		365E70524AC9D772A810E083 /* Pods-Breakfast Burrito FridayTests-SwiftDate.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; name = "Pods-Breakfast Burrito FridayTests-SwiftDate.modulemap"; path = "../Pods-Breakfast Burrito FridayTests-SwiftDate/Pods-Breakfast Burrito FridayTests-SwiftDate.modulemap"; sourceTree = "<group>"; };
-		36689653E2FC8EA41831CDEC /* SwiftDate.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftDate.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		3B87765E9B5D199744B678DD /* Pods-Breakfast Burrito Friday-SwiftOverlays-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Breakfast Burrito Friday-SwiftOverlays-Private.xcconfig"; sourceTree = "<group>"; };
-		3E48CE142805E3B376759D6D /* SwiftDate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftDate.swift; path = SwiftDate/SwiftDate.swift; sourceTree = "<group>"; };
-		4001678AC7DC850223E324B0 /* Pods-Breakfast Burrito Friday-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Breakfast Burrito Friday-environment.h"; sourceTree = "<group>"; };
-		4180F8190FF3446D123B53FA /* Pods-Breakfast Burrito Friday.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-Breakfast Burrito Friday.modulemap"; sourceTree = "<group>"; };
-		4F598DCED51B118694B5491E /* Pods-Breakfast Burrito FridayTests-SwiftyJSON-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "Pods-Breakfast Burrito FridayTests-SwiftyJSON-dummy.m"; path = "../Pods-Breakfast Burrito FridayTests-SwiftyJSON/Pods-Breakfast Burrito FridayTests-SwiftyJSON-dummy.m"; sourceTree = "<group>"; };
-		4FD7C303126989CF1B716DBC /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		557C0E6BA401EA74B9AD4D07 /* Pods-Breakfast Burrito Friday-SwiftOverlays-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Breakfast Burrito Friday-SwiftOverlays-dummy.m"; sourceTree = "<group>"; };
-		569159AACD47B83AEBD9A89E /* Pods-Breakfast Burrito FridayTests-SwiftyJSON.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Breakfast Burrito FridayTests-SwiftyJSON.xcconfig"; path = "../Pods-Breakfast Burrito FridayTests-SwiftyJSON/Pods-Breakfast Burrito FridayTests-SwiftyJSON.xcconfig"; sourceTree = "<group>"; };
-		5803373C32670559489459F3 /* Pods-Breakfast Burrito Friday-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Breakfast Burrito Friday-umbrella.h"; sourceTree = "<group>"; };
-		5988F671F5C21542881F48EE /* Pods-Breakfast Burrito FridayTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Breakfast Burrito FridayTests-umbrella.h"; sourceTree = "<group>"; };
-		5A86DDDC5A8FC18549A6CE1D /* Pods-Breakfast Burrito FridayTests-SwiftDate-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "Pods-Breakfast Burrito FridayTests-SwiftDate-dummy.m"; path = "../Pods-Breakfast Burrito FridayTests-SwiftDate/Pods-Breakfast Burrito FridayTests-SwiftDate-dummy.m"; sourceTree = "<group>"; };
-		5CDC6374B7CF960482187D79 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5FE70554FD4FCB7EE2F6FF91 /* Pods-Breakfast Burrito FridayTests-SwiftDate-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Pods-Breakfast Burrito FridayTests-SwiftDate-prefix.pch"; path = "../Pods-Breakfast Burrito FridayTests-SwiftDate/Pods-Breakfast Burrito FridayTests-SwiftDate-prefix.pch"; sourceTree = "<group>"; };
-		6372BA809A2813DF0030A7B7 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = Info.plist; path = "../Pods-Breakfast Burrito FridayTests-SwiftDate/Info.plist"; sourceTree = "<group>"; };
-		684EA52AECFB948E9105785C /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = Info.plist; path = "../Pods-Breakfast Burrito FridayTests-SwiftOverlays/Info.plist"; sourceTree = "<group>"; };
-		6B52CB32C2F22D4ADE46EC4B /* Pods-Breakfast Burrito Friday-SwiftDate-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Breakfast Burrito Friday-SwiftDate-prefix.pch"; sourceTree = "<group>"; };
-		6E26AEC7E1538697CF47D9B9 /* Pods-Breakfast Burrito FridayTests-SwiftOverlays-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Pods-Breakfast Burrito FridayTests-SwiftOverlays-prefix.pch"; path = "../Pods-Breakfast Burrito FridayTests-SwiftOverlays/Pods-Breakfast Burrito FridayTests-SwiftOverlays-prefix.pch"; sourceTree = "<group>"; };
-		70728A7F0C43879C87FEC9B9 /* Pods-Breakfast Burrito FridayTests-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Breakfast Burrito FridayTests-environment.h"; sourceTree = "<group>"; };
-		71DC118FD557713F5EA7D856 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		75998D030A5FBEEC33F8E97B /* Pods-Breakfast Burrito Friday-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Breakfast Burrito Friday-frameworks.sh"; sourceTree = "<group>"; };
-		78688DE57E167941BDDA758B /* Pods-Breakfast Burrito Friday-SwiftDate.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Breakfast Burrito Friday-SwiftDate.xcconfig"; sourceTree = "<group>"; };
-		7E40F5AE9BB94BCB15F3B680 /* SwiftOverlays.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftOverlays.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		80D0BB181122651FD89EB281 /* Pods-Breakfast Burrito FridayTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Breakfast Burrito FridayTests.debug.xcconfig"; sourceTree = "<group>"; };
-		81AA74F45B3B42A6C0973F1A /* SwiftyJSON.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftyJSON.swift; path = Source/SwiftyJSON.swift; sourceTree = "<group>"; };
-		889A3BAE409FC208247D773E /* Pods_Breakfast_Burrito_FridayTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Breakfast_Burrito_FridayTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		986C32080E1B288D2ACCD06A /* Pods-Breakfast Burrito Friday-SwiftyJSON-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Breakfast Burrito Friday-SwiftyJSON-Private.xcconfig"; sourceTree = "<group>"; };
-		9B9D4C309FA021F5A281B03B /* Pods-Breakfast Burrito Friday.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Breakfast Burrito Friday.debug.xcconfig"; sourceTree = "<group>"; };
-		9D559E0E2E106774F2792272 /* Pods-Breakfast Burrito Friday-SwiftOverlays-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Breakfast Burrito Friday-SwiftOverlays-umbrella.h"; sourceTree = "<group>"; };
-		9E5C92E1AF50F357BE56DC93 /* Pods-Breakfast Burrito FridayTests-SwiftDate-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Breakfast Burrito FridayTests-SwiftDate-Private.xcconfig"; path = "../Pods-Breakfast Burrito FridayTests-SwiftDate/Pods-Breakfast Burrito FridayTests-SwiftDate-Private.xcconfig"; sourceTree = "<group>"; };
-		A108BC11502E22D56A612D03 /* Pods-Breakfast Burrito Friday-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Breakfast Burrito Friday-resources.sh"; sourceTree = "<group>"; };
-		A49518D923DB15C584B038F9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		A8A1CEF0F1E6AA003D9FB5F4 /* Pods-Breakfast Burrito FridayTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Breakfast Burrito FridayTests-acknowledgements.plist"; sourceTree = "<group>"; };
-		A974041C69B3A3421E35E17B /* Pods-Breakfast Burrito FridayTests-SwiftyJSON-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Pods-Breakfast Burrito FridayTests-SwiftyJSON-umbrella.h"; path = "../Pods-Breakfast Burrito FridayTests-SwiftyJSON/Pods-Breakfast Burrito FridayTests-SwiftyJSON-umbrella.h"; sourceTree = "<group>"; };
-		AAA1B708E2D5561BF5179633 /* Pods-Breakfast Burrito Friday.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Breakfast Burrito Friday.release.xcconfig"; sourceTree = "<group>"; };
-		ABE56C8751F8F98D1FFC37F5 /* Pods-Breakfast Burrito Friday-SwiftOverlays-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Breakfast Burrito Friday-SwiftOverlays-prefix.pch"; sourceTree = "<group>"; };
-		ACF55FED50CE932AD6CBDB65 /* Pods-Breakfast Burrito Friday-SwiftyJSON-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Breakfast Burrito Friday-SwiftyJSON-dummy.m"; sourceTree = "<group>"; };
-		B1BF00D3D664D7610CC243D5 /* Pods-Breakfast Burrito FridayTests-SwiftDate.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Breakfast Burrito FridayTests-SwiftDate.xcconfig"; path = "../Pods-Breakfast Burrito FridayTests-SwiftDate/Pods-Breakfast Burrito FridayTests-SwiftDate.xcconfig"; sourceTree = "<group>"; };
-		B43A56916A11DCEC576980F9 /* Pods-Breakfast Burrito FridayTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Breakfast Burrito FridayTests-resources.sh"; sourceTree = "<group>"; };
-		B857054196207A2183E2D98F /* Pods-Breakfast Burrito FridayTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Breakfast Burrito FridayTests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		BE19CCD8EC205DE1437B8CF3 /* SwiftOverlays.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftOverlays.swift; path = SwiftOverlays/SwiftOverlays.swift; sourceTree = "<group>"; };
-		BFD629FFE1C2DD7090AD9661 /* Pods-Breakfast Burrito FridayTests-SwiftOverlays-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Breakfast Burrito FridayTests-SwiftOverlays-Private.xcconfig"; path = "../Pods-Breakfast Burrito FridayTests-SwiftOverlays/Pods-Breakfast Burrito FridayTests-SwiftOverlays-Private.xcconfig"; sourceTree = "<group>"; };
-		C311C0EB6E4A9CBD4EC437F2 /* SwiftOverlays.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftOverlays.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		C345F020425F56F08E67166F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		CB2EB7750C32FCFA81D64304 /* Pods-Breakfast Burrito FridayTests-SwiftOverlays-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "Pods-Breakfast Burrito FridayTests-SwiftOverlays-dummy.m"; path = "../Pods-Breakfast Burrito FridayTests-SwiftOverlays/Pods-Breakfast Burrito FridayTests-SwiftOverlays-dummy.m"; sourceTree = "<group>"; };
-		CD443CE8E1180AD91A20892C /* Pods-Breakfast Burrito Friday-SwiftDate.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-Breakfast Burrito Friday-SwiftDate.modulemap"; sourceTree = "<group>"; };
-		D10422A255A0C3533F76A4FF /* Pods_Breakfast_Burrito_Friday.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Breakfast_Burrito_Friday.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		D1DE6B18CE62F96F7AB39496 /* Pods-Breakfast Burrito Friday-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Breakfast Burrito Friday-dummy.m"; sourceTree = "<group>"; };
-		D4AA5BF605E67959E43AD1AB /* Pods-Breakfast Burrito FridayTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-Breakfast Burrito FridayTests.modulemap"; sourceTree = "<group>"; };
-		D6C1DB4DC5066E8C1D39A1F3 /* Pods-Breakfast Burrito Friday-SwiftOverlays.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Breakfast Burrito Friday-SwiftOverlays.xcconfig"; sourceTree = "<group>"; };
-		D873ABAD910D4DE6317146D9 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = Info.plist; path = "../Pods-Breakfast Burrito FridayTests-SwiftyJSON/Info.plist"; sourceTree = "<group>"; };
-		D8E9AC9D8960015B265331F2 /* SwiftyJSON.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftyJSON.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		E27801DAA134549AE8A28AB9 /* Pods-Breakfast Burrito FridayTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Breakfast Burrito FridayTests.release.xcconfig"; sourceTree = "<group>"; };
-		EE90B151248FF45BBB397127 /* Pods-Breakfast Burrito Friday-SwiftyJSON-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Breakfast Burrito Friday-SwiftyJSON-umbrella.h"; sourceTree = "<group>"; };
-		EF0B9CAAE9B5FD67F9910A71 /* Pods-Breakfast Burrito Friday-SwiftDate-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Breakfast Burrito Friday-SwiftDate-Private.xcconfig"; sourceTree = "<group>"; };
-		F3DC03D3ADF62F94D240A603 /* Pods-Breakfast Burrito Friday-SwiftyJSON-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Breakfast Burrito Friday-SwiftyJSON-prefix.pch"; sourceTree = "<group>"; };
-		F48DB676F7B6549AD70BB75B /* Pods-Breakfast Burrito FridayTests-SwiftyJSON.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; name = "Pods-Breakfast Burrito FridayTests-SwiftyJSON.modulemap"; path = "../Pods-Breakfast Burrito FridayTests-SwiftyJSON/Pods-Breakfast Burrito FridayTests-SwiftyJSON.modulemap"; sourceTree = "<group>"; };
-		F879AADE61EC816AA780A277 /* Pods-Breakfast Burrito FridayTests-SwiftOverlays.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; name = "Pods-Breakfast Burrito FridayTests-SwiftOverlays.modulemap"; path = "../Pods-Breakfast Burrito FridayTests-SwiftOverlays/Pods-Breakfast Burrito FridayTests-SwiftOverlays.modulemap"; sourceTree = "<group>"; };
-		F9AE2FF3F802F87B5895F727 /* Pods-Breakfast Burrito Friday-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Breakfast Burrito Friday-acknowledgements.markdown"; sourceTree = "<group>"; };
-		FA5F4534C1FD38CF9023C313 /* SwiftDate.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftDate.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		FDC917078A8688B1ED06CE02 /* SwiftyJSON.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftyJSON.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		00E7AF475D6106D4C36C88D8A456680A /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		06ECE3A21F55B82A2727EA58DB37D725 /* NSCalendar+SwiftDate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSCalendar+SwiftDate.swift"; path = "Sources/SwiftDate/NSCalendar+SwiftDate.swift"; sourceTree = "<group>"; };
+		08D9BDD161E2C383E2DF3E0F87A387DA /* Pods-Breakfast Burrito Friday-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Breakfast Burrito Friday-acknowledgements.markdown"; sourceTree = "<group>"; };
+		117F938195547A752C9C04DA110D94E2 /* Pods-Breakfast Burrito Friday-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Breakfast Burrito Friday-umbrella.h"; sourceTree = "<group>"; };
+		158DB9C46916C192B72656A1A135AEC5 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		15F49405BE1FBE3D96CBCA70A32B0523 /* Firebase.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = Firebase.modulemap; sourceTree = "<group>"; };
+		1728EEAD73D78F711DD9B9BDB7D89C52 /* Pods-Breakfast Burrito Friday.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Breakfast Burrito Friday.release.xcconfig"; sourceTree = "<group>"; };
+		195C9F1FA4297B0CDA88FDFC2BE016A0 /* Pods-Breakfast Burrito FridayTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Breakfast Burrito FridayTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		22A6D51E5063A467F6835F7074EFF292 /* DateInRegion+Comparisons.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DateInRegion+Comparisons.swift"; path = "Sources/SwiftDate/DateInRegion+Comparisons.swift"; sourceTree = "<group>"; };
+		27973C0C9B05C72DEACFA04C856FD966 /* Region.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Region.swift; path = Sources/SwiftDate/Region.swift; sourceTree = "<group>"; };
+		2A2AF453F7BAE062F11D1DD9AF0978A0 /* DateInRegion+StartEnd.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DateInRegion+StartEnd.swift"; path = "Sources/SwiftDate/DateInRegion+StartEnd.swift"; sourceTree = "<group>"; };
+		31148D81B0052F49861620307BCD80EA /* SwiftyJSON.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = SwiftyJSON.modulemap; sourceTree = "<group>"; };
+		375481D7A8CF4AAE287008E74D1F9D63 /* FAuthType.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = FAuthType.h; sourceTree = "<group>"; };
+		3A033D4FD528D880DB0A4FD337DA6559 /* NSTimeInterval+SwiftDate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSTimeInterval+SwiftDate.swift"; path = "Sources/SwiftDate/NSTimeInterval+SwiftDate.swift"; sourceTree = "<group>"; };
+		3A915F37A9D23564E1F6B1378C742ED0 /* Empty.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = Empty.m; sourceTree = "<group>"; };
+		3AAFCEE4B8DC0A8156242AA8D5DC2AEC /* Pods-Breakfast Burrito Friday.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-Breakfast Burrito Friday.modulemap"; sourceTree = "<group>"; };
+		401EBE57E44B58B52D448565793876E9 /* Firebase.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = Firebase.h; sourceTree = "<group>"; };
+		42E1744AD73C443615FD47F8B2F551A2 /* Pods-Breakfast Burrito Friday.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Breakfast Burrito Friday.debug.xcconfig"; sourceTree = "<group>"; };
+		481CD6E65593E9E6CBE3D219E999E06C /* Pods-Breakfast Burrito FridayTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Breakfast Burrito FridayTests-resources.sh"; sourceTree = "<group>"; };
+		4B49332553095ABEE120C25275BC28D7 /* Dictionary+SwiftDate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Dictionary+SwiftDate.swift"; path = "Sources/SwiftDate/Dictionary+SwiftDate.swift"; sourceTree = "<group>"; };
+		4BB9075F4C4A8CB5E830867E76D220B3 /* DateInRegion+NSDatePort.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DateInRegion+NSDatePort.swift"; path = "Sources/SwiftDate/DateInRegion+NSDatePort.swift"; sourceTree = "<group>"; };
+		553AFBC1C587D1B626266DE0BFD2189B /* Pods-Breakfast Burrito FridayTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Breakfast Burrito FridayTests-dummy.m"; sourceTree = "<group>"; };
+		5D2CA3DD5174F9331B92AB7C0C10E402 /* SwiftOverlays.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftOverlays.xcconfig; sourceTree = "<group>"; };
+		5D73A9CBF59C7B9370837A2DB031F3E8 /* Pods-Breakfast Burrito Friday-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Breakfast Burrito Friday-dummy.m"; sourceTree = "<group>"; };
+		6056FB566943730CE1670486F7183745 /* Pods-Breakfast Burrito Friday-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Breakfast Burrito Friday-resources.sh"; sourceTree = "<group>"; };
+		60F85758B54CB0D843A3E97DFFB2F21F /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/CFNetwork.framework; sourceTree = DEVELOPER_DIR; };
+		6166BE40C18BC6BF0EED92CAB212EC33 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/SystemConfiguration.framework; sourceTree = DEVELOPER_DIR; };
+		62D5DE9ED21910502A60A3DA1C33A234 /* FQuery.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = FQuery.h; sourceTree = "<group>"; };
+		64FAC4088C9A334B68A8416974E72F06 /* DateInRegion+Equations.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DateInRegion+Equations.swift"; path = "Sources/SwiftDate/DateInRegion+Equations.swift"; sourceTree = "<group>"; };
+		678200ADABD40C7A843DBC99D8B3B62D /* SwiftDate-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftDate-umbrella.h"; sourceTree = "<group>"; };
+		68EE66DC4A54A17E7D8AEFE303F32032 /* Firebase.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Firebase.xcconfig; sourceTree = "<group>"; };
+		6CA69B68D163E8B649F0C8273CCA9D0F /* SwiftyJSON-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyJSON-umbrella.h"; sourceTree = "<group>"; };
+		732ED291F7C602B4503D6BC04001AC5C /* Pods_Breakfast_Burrito_FridayTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Breakfast_Burrito_FridayTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		73E4CC0C6702370F5F1A4D216AC0D677 /* FEventType.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = FEventType.h; sourceTree = "<group>"; };
+		76E44AECA16CB05156A63023056D65D1 /* DateInRegion.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DateInRegion.swift; path = Sources/SwiftDate/DateInRegion.swift; sourceTree = "<group>"; };
+		77C49D928448B31FB9A7D5AE5C8D6C4E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		8B0F5857F6B534348F7ABEC252F49614 /* SwiftDate-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftDate-dummy.m"; sourceTree = "<group>"; };
+		8C3C90862A44687DDF41B1411AE5D6B7 /* FirebaseApp.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = FirebaseApp.h; sourceTree = "<group>"; };
+		8EFFA9DB3AB0BAAB71E2C8FA36C5FD50 /* FTransactionResult.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = FTransactionResult.h; sourceTree = "<group>"; };
+		8FF6A3A5BAF8773031507E9096D322BF /* SwiftOverlays.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = SwiftOverlays.modulemap; sourceTree = "<group>"; };
+		91B2D5B22C7F6DBDCD00D93C47882C32 /* FConfig.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = FConfig.h; sourceTree = "<group>"; };
+		93F5BC098C4443D107B209DBC608055B /* NSDateFormatter+SwiftDate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSDateFormatter+SwiftDate.swift"; path = "Sources/SwiftDate/NSDateFormatter+SwiftDate.swift"; sourceTree = "<group>"; };
+		963ED8797FD4736BFA2B69E97AE4D3C3 /* SwiftDate.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftDate.xcconfig; sourceTree = "<group>"; };
+		969B98FA93E4353C97D84C5262F42ECF /* DateInRegion+Formatter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DateInRegion+Formatter.swift"; path = "Sources/SwiftDate/DateInRegion+Formatter.swift"; sourceTree = "<group>"; };
+		9742A4BE75BD5A67AB6DEB1F7241425D /* Pods_Breakfast_Burrito_Friday.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Breakfast_Burrito_Friday.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9BCD570981D974F2DBA6B01F11B8CE7D /* SwiftyJSON.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftyJSON.swift; path = Source/SwiftyJSON.swift; sourceTree = "<group>"; };
+		9E7390382B3AA5AB2BF6A4E3B979D7BA /* SwiftOverlays.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftOverlays.swift; path = SwiftOverlays/SwiftOverlays.swift; sourceTree = "<group>"; };
+		9FEF2680E3A6BBE2200AE8D416D98952 /* SwiftOverlays-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftOverlays-umbrella.h"; sourceTree = "<group>"; };
+		A54BBF6B5506190DB833B8746F394DBA /* SwiftDate.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftDate.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A98FFCEBA78892E3733058A2AE963A70 /* NSTimeZone+SwiftDate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSTimeZone+SwiftDate.swift"; path = "Sources/SwiftDate/NSTimeZone+SwiftDate.swift"; sourceTree = "<group>"; };
+		ACF058CFD4A2C7F396E4D5ADFA008987 /* NSDateComponents+SwiftDate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSDateComponents+SwiftDate.swift"; path = "Sources/SwiftDate/NSDateComponents+SwiftDate.swift"; sourceTree = "<group>"; };
+		AD66ABD36E6A8B77428D8EB31CC6DA6D /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AE274BC00837700CCBCBC85BD326B61E /* SwiftyJSON.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftyJSON.xcconfig; sourceTree = "<group>"; };
+		AEB414FED7E093CCA7A482440144DE53 /* Pods-Breakfast Burrito FridayTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Breakfast Burrito FridayTests.release.xcconfig"; sourceTree = "<group>"; };
+		B318D662B982E55879B17A1DCC8572F6 /* Pods-Breakfast Burrito FridayTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Breakfast Burrito FridayTests-frameworks.sh"; sourceTree = "<group>"; };
+		B3DB55CC7102E39453DA668BEF92051B /* SwiftDate.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = SwiftDate.modulemap; sourceTree = "<group>"; };
+		B9155853A842058F2C4E7D5EB73D5017 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		BE9D1987BB327FB58B7163B0A7D59BA5 /* Pods-Breakfast Burrito Friday-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Breakfast Burrito Friday-frameworks.sh"; sourceTree = "<group>"; };
+		C1403959EC20D3477B826CE333B7B365 /* NSLocale+SwiftDate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSLocale+SwiftDate.swift"; path = "Sources/SwiftDate/NSLocale+SwiftDate.swift"; sourceTree = "<group>"; };
+		C1EB7A674F76A66D25DED8725F7C24E6 /* SwiftyJSON-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyJSON-prefix.pch"; sourceTree = "<group>"; };
+		C39CBDDE47939FEEECDCF12F238148DE /* FMutableData.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = FMutableData.h; sourceTree = "<group>"; };
+		C4086C9420D237A71D985D727E46AD5D /* FDataSnapshot.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = FDataSnapshot.h; sourceTree = "<group>"; };
+		C60DAD0DDB6C777820582C78E13F0F21 /* Additions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Additions.swift; path = Sources/SwiftDate/Additions.swift; sourceTree = "<group>"; };
+		C6204446BD9150A17B12E81B4A6F9CA8 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Security.framework; sourceTree = DEVELOPER_DIR; };
+		C74BB8E9CFCF54DB581944CA0E9EC887 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C9128158B7C79EB4679E1C856956121F /* Firebase-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Firebase-umbrella.h"; sourceTree = "<group>"; };
+		C95D0F22E6B59FA126D9AAD1099D3692 /* Pods-Breakfast Burrito FridayTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Breakfast Burrito FridayTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		CA77BD72D630EAD1D64EF437C215809E /* NSDate+SwiftDate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSDate+SwiftDate.swift"; path = "Sources/SwiftDate/NSDate+SwiftDate.swift"; sourceTree = "<group>"; };
+		CA7BCE8BCA0B108A7ABEB5BAA7083ED9 /* Pods-Breakfast Burrito Friday-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Breakfast Burrito Friday-acknowledgements.plist"; sourceTree = "<group>"; };
+		CDCDB0D4FC1C42D7EE46DF9CC0E3E8CD /* DateInRegion+Components.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DateInRegion+Components.swift"; path = "Sources/SwiftDate/DateInRegion+Components.swift"; sourceTree = "<group>"; };
+		D1CE1CA4DD3EA9DDE32C9DA230B1F8AE /* NSDateInterval.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NSDateInterval.swift; path = Sources/SwiftDate/NSDateInterval.swift; sourceTree = "<group>"; };
+		D215B4DFA29CE8F0840EA0843A0A00C3 /* Pods-Breakfast Burrito FridayTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Breakfast Burrito FridayTests.debug.xcconfig"; sourceTree = "<group>"; };
+		D4A5897CCF701FEDA4425B09DBA5FDA6 /* DateInRegion+Operations.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DateInRegion+Operations.swift"; path = "Sources/SwiftDate/DateInRegion+Operations.swift"; sourceTree = "<group>"; };
+		D648A611FB84A625D5EFEB33D93E04AB /* SwiftDate-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftDate-prefix.pch"; sourceTree = "<group>"; };
+		D6719F381641EB6F9C5D7BF5B58F676D /* Firebase-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Firebase-prefix.pch"; sourceTree = "<group>"; };
+		D98A3DF7C95F9FE3A008C93E86613E73 /* Pods-Breakfast Burrito FridayTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-Breakfast Burrito FridayTests.modulemap"; sourceTree = "<group>"; };
+		DF09A2292534DC3848E64C0DF78556AE /* SwiftOverlays-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftOverlays-dummy.m"; sourceTree = "<group>"; };
+		E13981908FCC3F7CE3DE00A4BCD2323B /* Firebase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Firebase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E1E2ED0BD9B789EA20EE28D9A98D977D /* FirebaseServerValue.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = FirebaseServerValue.h; sourceTree = "<group>"; };
+		E281415854871673B3264F3891DB8F88 /* Firebase-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Firebase-dummy.m"; sourceTree = "<group>"; };
+		E5F93FA86C30354B54C3FCF0AC1A74E9 /* SwiftOverlays.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftOverlays.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		ECEA020944F43A9DCF5DF8EB6E5DA476 /* SwiftyJSON-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftyJSON-dummy.m"; sourceTree = "<group>"; };
+		F1C9CC3386190068782A59EAA10CD3EA /* SwiftOverlays-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftOverlays-prefix.pch"; sourceTree = "<group>"; };
+		F7725776C9B337915A35BEE047C9C466 /* FAuthData.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = FAuthData.h; sourceTree = "<group>"; };
+		FA9D5125AD3C5372149A0DBBA688785E /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FBC18675ECE954AC733BF61366018D98 /* Pods-Breakfast Burrito FridayTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Breakfast Burrito FridayTests-umbrella.h"; sourceTree = "<group>"; };
+		FE4D4D7C1BDC9D1D19F0D283B891FEF0 /* SwiftyJSON.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftyJSON.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FEF52218E5247B6967C75B8F2C17A0B1 /* libFirebaseStatic.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; path = libFirebaseStatic.a; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		012D1A71CC90CA275673BBD3 /* Frameworks */ = {
+		018EDA9B1D637D397EC217A060B28D33 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0CC2549C3E036A1E3E5CF0F6 /* Foundation.framework in Frameworks */,
+				D169A5B5A9C97C3D2ED612A1CE7CDF93 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		1DE5ACC6278352CB87A5F321 /* Frameworks */ = {
+		328B15258D1964C51E94DA3471236D21 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6AADE7F02675E5BD729EC073 /* Foundation.framework in Frameworks */,
+				CDEB25C47EACECB539008CC1DBF78482 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		44378DD328F3746EBEBE0788 /* Frameworks */ = {
+		55FCE630860ABD4690D703EE3607FE16 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C7F17DDB48B250D19A787F27 /* Foundation.framework in Frameworks */,
+				5A0890EE4D628D67022B2B7CF8F89D52 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		58B21CB2AD9D101A49DE9249 /* Frameworks */ = {
+		5B041070E3F3D98692A95DEDD3CC09E1 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B8E54CE2793B52C413C2D853 /* Foundation.framework in Frameworks */,
+				6EC8E7D570FE4657328EAD248A4A4C01 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5E2C3DD9F607FC640222EC11 /* Frameworks */ = {
+		7E6A833D46503026D38224D93BDF4448 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FC1791219A8C7B75C4BEA77B /* Foundation.framework in Frameworks */,
+				96FC7981E0D0AADEEFFC87EEEDE7215E /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		7F295BDA8D6697374450926A /* Frameworks */ = {
+		A7E10F383DCD59079712A57B50DCF88E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7755B2D1D0D4C625ED7C4224 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A685EB005EB9016B21D87911 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				D450D4A4E8C8002D04A28F87 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		C68213B2A575CEA356D9381A /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				E1ADB7611FD99A42C88EFEFC /* Foundation.framework in Frameworks */,
+				E3FBB5B462A14E8ACC9B340227DE4BE1 /* CFNetwork.framework in Frameworks */,
+				4B0EFAAA29109D9A705A27EFFA10FAE2 /* Foundation.framework in Frameworks */,
+				1C04A7CD5B70C4561F6D98C882731C65 /* Security.framework in Frameworks */,
+				E1A883FEBDEED9B85D90D6BE2080F218 /* SystemConfiguration.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		08452BBA3927CD857C45EC02 /* Firebase */ = {
+		14B8B9B15ECBE87983FF987239AB2D7B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-			);
-			path = Firebase;
-			sourceTree = "<group>";
-		};
-		101C40535622DC56C3B13A2A /* SwiftOverlays */ = {
-			isa = PBXGroup;
-			children = (
-				BE19CCD8EC205DE1437B8CF3 /* SwiftOverlays.swift */,
-				876F2D44BBE38A44A30F8D8C /* Support Files */,
-			);
-			path = SwiftOverlays;
-			sourceTree = "<group>";
-		};
-		24DC66331B4E46EE706AB2E5 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				4E6A774C0788CA338C61445D /* iOS */,
+				843A690C4A272ACCFA5202DC4499C74E /* iOS */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		26653FDDB130589771CBA2E0 /* Support Files */ = {
+		209D6F905CBD64BEF1A4A24A093FE2E6 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				4FD7C303126989CF1B716DBC /* Info.plist */,
-				D873ABAD910D4DE6317146D9 /* Info.plist */,
-				04542FB641D72DB4E34FD70F /* Pods-Breakfast Burrito Friday-SwiftyJSON.modulemap */,
-				17AA942C1C1BED4109B279FE /* Pods-Breakfast Burrito Friday-SwiftyJSON.xcconfig */,
-				986C32080E1B288D2ACCD06A /* Pods-Breakfast Burrito Friday-SwiftyJSON-Private.xcconfig */,
-				ACF55FED50CE932AD6CBDB65 /* Pods-Breakfast Burrito Friday-SwiftyJSON-dummy.m */,
-				F3DC03D3ADF62F94D240A603 /* Pods-Breakfast Burrito Friday-SwiftyJSON-prefix.pch */,
-				EE90B151248FF45BBB397127 /* Pods-Breakfast Burrito Friday-SwiftyJSON-umbrella.h */,
-				F48DB676F7B6549AD70BB75B /* Pods-Breakfast Burrito FridayTests-SwiftyJSON.modulemap */,
-				569159AACD47B83AEBD9A89E /* Pods-Breakfast Burrito FridayTests-SwiftyJSON.xcconfig */,
-				1613248A2BD178AEF509D436 /* Pods-Breakfast Burrito FridayTests-SwiftyJSON-Private.xcconfig */,
-				4F598DCED51B118694B5491E /* Pods-Breakfast Burrito FridayTests-SwiftyJSON-dummy.m */,
-				2C5D6D8AB698ACEB5DA1D69B /* Pods-Breakfast Burrito FridayTests-SwiftyJSON-prefix.pch */,
-				A974041C69B3A3421E35E17B /* Pods-Breakfast Burrito FridayTests-SwiftyJSON-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/Pods-Breakfast Burrito Friday-SwiftyJSON";
-			sourceTree = "<group>";
-		};
-		4E6A774C0788CA338C61445D /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				A49518D923DB15C584B038F9 /* Foundation.framework */,
-			);
-			name = iOS;
-			sourceTree = "<group>";
-		};
-		5763A9CE6E7FE028E082A77D /* SwiftyJSON */ = {
-			isa = PBXGroup;
-			children = (
-				81AA74F45B3B42A6C0973F1A /* SwiftyJSON.swift */,
-				26653FDDB130589771CBA2E0 /* Support Files */,
-			);
-			path = SwiftyJSON;
-			sourceTree = "<group>";
-		};
-		5A8816A33CE839F484521DBD /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				5CDC6374B7CF960482187D79 /* Info.plist */,
-				6372BA809A2813DF0030A7B7 /* Info.plist */,
-				CD443CE8E1180AD91A20892C /* Pods-Breakfast Burrito Friday-SwiftDate.modulemap */,
-				78688DE57E167941BDDA758B /* Pods-Breakfast Burrito Friday-SwiftDate.xcconfig */,
-				EF0B9CAAE9B5FD67F9910A71 /* Pods-Breakfast Burrito Friday-SwiftDate-Private.xcconfig */,
-				2B15780D69817C57B8DE441D /* Pods-Breakfast Burrito Friday-SwiftDate-dummy.m */,
-				6B52CB32C2F22D4ADE46EC4B /* Pods-Breakfast Burrito Friday-SwiftDate-prefix.pch */,
-				20040D0F1B2E4D95C47D6E57 /* Pods-Breakfast Burrito Friday-SwiftDate-umbrella.h */,
-				365E70524AC9D772A810E083 /* Pods-Breakfast Burrito FridayTests-SwiftDate.modulemap */,
-				B1BF00D3D664D7610CC243D5 /* Pods-Breakfast Burrito FridayTests-SwiftDate.xcconfig */,
-				9E5C92E1AF50F357BE56DC93 /* Pods-Breakfast Burrito FridayTests-SwiftDate-Private.xcconfig */,
-				5A86DDDC5A8FC18549A6CE1D /* Pods-Breakfast Burrito FridayTests-SwiftDate-dummy.m */,
-				5FE70554FD4FCB7EE2F6FF91 /* Pods-Breakfast Burrito FridayTests-SwiftDate-prefix.pch */,
-				350B663C5D07561BC3D06451 /* Pods-Breakfast Burrito FridayTests-SwiftDate-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/Pods-Breakfast Burrito Friday-SwiftDate";
-			sourceTree = "<group>";
-		};
-		690E2F28DCF63F6077D515FA /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				08452BBA3927CD857C45EC02 /* Firebase */,
-				97FCC3CFB33B866C9EA9CC0C /* SwiftDate */,
-				101C40535622DC56C3B13A2A /* SwiftOverlays */,
-				5763A9CE6E7FE028E082A77D /* SwiftyJSON */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		876F2D44BBE38A44A30F8D8C /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				1E641DA788A73D5699F81063 /* Info.plist */,
-				684EA52AECFB948E9105785C /* Info.plist */,
-				29560A0348688304D25D5A48 /* Pods-Breakfast Burrito Friday-SwiftOverlays.modulemap */,
-				D6C1DB4DC5066E8C1D39A1F3 /* Pods-Breakfast Burrito Friday-SwiftOverlays.xcconfig */,
-				3B87765E9B5D199744B678DD /* Pods-Breakfast Burrito Friday-SwiftOverlays-Private.xcconfig */,
-				557C0E6BA401EA74B9AD4D07 /* Pods-Breakfast Burrito Friday-SwiftOverlays-dummy.m */,
-				ABE56C8751F8F98D1FFC37F5 /* Pods-Breakfast Burrito Friday-SwiftOverlays-prefix.pch */,
-				9D559E0E2E106774F2792272 /* Pods-Breakfast Burrito Friday-SwiftOverlays-umbrella.h */,
-				F879AADE61EC816AA780A277 /* Pods-Breakfast Burrito FridayTests-SwiftOverlays.modulemap */,
-				192FBB4A7271E0641F943937 /* Pods-Breakfast Burrito FridayTests-SwiftOverlays.xcconfig */,
-				BFD629FFE1C2DD7090AD9661 /* Pods-Breakfast Burrito FridayTests-SwiftOverlays-Private.xcconfig */,
-				CB2EB7750C32FCFA81D64304 /* Pods-Breakfast Burrito FridayTests-SwiftOverlays-dummy.m */,
-				6E26AEC7E1538697CF47D9B9 /* Pods-Breakfast Burrito FridayTests-SwiftOverlays-prefix.pch */,
-				0CBEC680333E3829559868E7 /* Pods-Breakfast Burrito FridayTests-SwiftOverlays-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/Pods-Breakfast Burrito Friday-SwiftOverlays";
-			sourceTree = "<group>";
-		};
-		909EA5D78DD2D1B80FBA53BC /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				D10422A255A0C3533F76A4FF /* Pods_Breakfast_Burrito_Friday.framework */,
-				889A3BAE409FC208247D773E /* Pods_Breakfast_Burrito_FridayTests.framework */,
-				36689653E2FC8EA41831CDEC /* SwiftDate.framework */,
-				FA5F4534C1FD38CF9023C313 /* SwiftDate.framework */,
-				C311C0EB6E4A9CBD4EC437F2 /* SwiftOverlays.framework */,
-				7E40F5AE9BB94BCB15F3B680 /* SwiftOverlays.framework */,
-				FDC917078A8688B1ED06CE02 /* SwiftyJSON.framework */,
-				D8E9AC9D8960015B265331F2 /* SwiftyJSON.framework */,
+				E13981908FCC3F7CE3DE00A4BCD2323B /* Firebase.framework */,
+				9742A4BE75BD5A67AB6DEB1F7241425D /* Pods_Breakfast_Burrito_Friday.framework */,
+				732ED291F7C602B4503D6BC04001AC5C /* Pods_Breakfast_Burrito_FridayTests.framework */,
+				A54BBF6B5506190DB833B8746F394DBA /* SwiftDate.framework */,
+				E5F93FA86C30354B54C3FCF0AC1A74E9 /* SwiftOverlays.framework */,
+				FE4D4D7C1BDC9D1D19F0D283B891FEF0 /* SwiftyJSON.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		97FCC3CFB33B866C9EA9CC0C /* SwiftDate */ = {
+		221CDECA6972B173F27C6E4845735062 /* Pods-Breakfast Burrito Friday */ = {
 			isa = PBXGroup;
 			children = (
-				3E48CE142805E3B376759D6D /* SwiftDate.swift */,
-				5A8816A33CE839F484521DBD /* Support Files */,
-			);
-			path = SwiftDate;
-			sourceTree = "<group>";
-		};
-		9EF323EA4E602182015EBB36 /* Pods-Breakfast Burrito FridayTests */ = {
-			isa = PBXGroup;
-			children = (
-				71DC118FD557713F5EA7D856 /* Info.plist */,
-				D4AA5BF605E67959E43AD1AB /* Pods-Breakfast Burrito FridayTests.modulemap */,
-				B857054196207A2183E2D98F /* Pods-Breakfast Burrito FridayTests-acknowledgements.markdown */,
-				A8A1CEF0F1E6AA003D9FB5F4 /* Pods-Breakfast Burrito FridayTests-acknowledgements.plist */,
-				0F286553DD5397CB2DBF252A /* Pods-Breakfast Burrito FridayTests-dummy.m */,
-				70728A7F0C43879C87FEC9B9 /* Pods-Breakfast Burrito FridayTests-environment.h */,
-				0CA8A1A6C8FA8ACD0B573CFA /* Pods-Breakfast Burrito FridayTests-frameworks.sh */,
-				B43A56916A11DCEC576980F9 /* Pods-Breakfast Burrito FridayTests-resources.sh */,
-				5988F671F5C21542881F48EE /* Pods-Breakfast Burrito FridayTests-umbrella.h */,
-				80D0BB181122651FD89EB281 /* Pods-Breakfast Burrito FridayTests.debug.xcconfig */,
-				E27801DAA134549AE8A28AB9 /* Pods-Breakfast Burrito FridayTests.release.xcconfig */,
-			);
-			name = "Pods-Breakfast Burrito FridayTests";
-			path = "Target Support Files/Pods-Breakfast Burrito FridayTests";
-			sourceTree = "<group>";
-		};
-		CFF1B33A618C9B9441CCCD67 = {
-			isa = PBXGroup;
-			children = (
-				C345F020425F56F08E67166F /* Podfile */,
-				24DC66331B4E46EE706AB2E5 /* Frameworks */,
-				690E2F28DCF63F6077D515FA /* Pods */,
-				909EA5D78DD2D1B80FBA53BC /* Products */,
-				EDB3D58B7827671CE51EB3F6 /* Targets Support Files */,
-			);
-			sourceTree = "<group>";
-		};
-		EDB3D58B7827671CE51EB3F6 /* Targets Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				F3DE6735D22C1FF6F1D7449B /* Pods-Breakfast Burrito Friday */,
-				9EF323EA4E602182015EBB36 /* Pods-Breakfast Burrito FridayTests */,
-			);
-			name = "Targets Support Files";
-			sourceTree = "<group>";
-		};
-		F3DE6735D22C1FF6F1D7449B /* Pods-Breakfast Burrito Friday */ = {
-			isa = PBXGroup;
-			children = (
-				22FC837A42E73A1E62B146D4 /* Info.plist */,
-				4180F8190FF3446D123B53FA /* Pods-Breakfast Burrito Friday.modulemap */,
-				F9AE2FF3F802F87B5895F727 /* Pods-Breakfast Burrito Friday-acknowledgements.markdown */,
-				09D4E7A4DAA4E3FDB309BBD9 /* Pods-Breakfast Burrito Friday-acknowledgements.plist */,
-				D1DE6B18CE62F96F7AB39496 /* Pods-Breakfast Burrito Friday-dummy.m */,
-				4001678AC7DC850223E324B0 /* Pods-Breakfast Burrito Friday-environment.h */,
-				75998D030A5FBEEC33F8E97B /* Pods-Breakfast Burrito Friday-frameworks.sh */,
-				A108BC11502E22D56A612D03 /* Pods-Breakfast Burrito Friday-resources.sh */,
-				5803373C32670559489459F3 /* Pods-Breakfast Burrito Friday-umbrella.h */,
-				9B9D4C309FA021F5A281B03B /* Pods-Breakfast Burrito Friday.debug.xcconfig */,
-				AAA1B708E2D5561BF5179633 /* Pods-Breakfast Burrito Friday.release.xcconfig */,
+				C74BB8E9CFCF54DB581944CA0E9EC887 /* Info.plist */,
+				3AAFCEE4B8DC0A8156242AA8D5DC2AEC /* Pods-Breakfast Burrito Friday.modulemap */,
+				08D9BDD161E2C383E2DF3E0F87A387DA /* Pods-Breakfast Burrito Friday-acknowledgements.markdown */,
+				CA7BCE8BCA0B108A7ABEB5BAA7083ED9 /* Pods-Breakfast Burrito Friday-acknowledgements.plist */,
+				5D73A9CBF59C7B9370837A2DB031F3E8 /* Pods-Breakfast Burrito Friday-dummy.m */,
+				BE9D1987BB327FB58B7163B0A7D59BA5 /* Pods-Breakfast Burrito Friday-frameworks.sh */,
+				6056FB566943730CE1670486F7183745 /* Pods-Breakfast Burrito Friday-resources.sh */,
+				117F938195547A752C9C04DA110D94E2 /* Pods-Breakfast Burrito Friday-umbrella.h */,
+				42E1744AD73C443615FD47F8B2F551A2 /* Pods-Breakfast Burrito Friday.debug.xcconfig */,
+				1728EEAD73D78F711DD9B9BDB7D89C52 /* Pods-Breakfast Burrito Friday.release.xcconfig */,
 			);
 			name = "Pods-Breakfast Burrito Friday";
 			path = "Target Support Files/Pods-Breakfast Burrito Friday";
 			sourceTree = "<group>";
 		};
+		311DC0A1F0B6F6C9D4E9776942322C4E /* SwiftDate */ = {
+			isa = PBXGroup;
+			children = (
+				C60DAD0DDB6C777820582C78E13F0F21 /* Additions.swift */,
+				76E44AECA16CB05156A63023056D65D1 /* DateInRegion.swift */,
+				22A6D51E5063A467F6835F7074EFF292 /* DateInRegion+Comparisons.swift */,
+				CDCDB0D4FC1C42D7EE46DF9CC0E3E8CD /* DateInRegion+Components.swift */,
+				64FAC4088C9A334B68A8416974E72F06 /* DateInRegion+Equations.swift */,
+				969B98FA93E4353C97D84C5262F42ECF /* DateInRegion+Formatter.swift */,
+				4BB9075F4C4A8CB5E830867E76D220B3 /* DateInRegion+NSDatePort.swift */,
+				D4A5897CCF701FEDA4425B09DBA5FDA6 /* DateInRegion+Operations.swift */,
+				2A2AF453F7BAE062F11D1DD9AF0978A0 /* DateInRegion+StartEnd.swift */,
+				4B49332553095ABEE120C25275BC28D7 /* Dictionary+SwiftDate.swift */,
+				06ECE3A21F55B82A2727EA58DB37D725 /* NSCalendar+SwiftDate.swift */,
+				CA77BD72D630EAD1D64EF437C215809E /* NSDate+SwiftDate.swift */,
+				ACF058CFD4A2C7F396E4D5ADFA008987 /* NSDateComponents+SwiftDate.swift */,
+				93F5BC098C4443D107B209DBC608055B /* NSDateFormatter+SwiftDate.swift */,
+				D1CE1CA4DD3EA9DDE32C9DA230B1F8AE /* NSDateInterval.swift */,
+				C1403959EC20D3477B826CE333B7B365 /* NSLocale+SwiftDate.swift */,
+				3A033D4FD528D880DB0A4FD337DA6559 /* NSTimeInterval+SwiftDate.swift */,
+				A98FFCEBA78892E3733058A2AE963A70 /* NSTimeZone+SwiftDate.swift */,
+				27973C0C9B05C72DEACFA04C856FD966 /* Region.swift */,
+				755CBB15036708F85332959187BFEDDA /* Support Files */,
+			);
+			path = SwiftDate;
+			sourceTree = "<group>";
+		};
+		4D236B78AAF1FD7F9431461501DD227B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FEF52218E5247B6967C75B8F2C17A0B1 /* libFirebaseStatic.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		522DD0E3101689E4D7F92EDBE19DA340 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				00E7AF475D6106D4C36C88D8A456680A /* Info.plist */,
+				31148D81B0052F49861620307BCD80EA /* SwiftyJSON.modulemap */,
+				AE274BC00837700CCBCBC85BD326B61E /* SwiftyJSON.xcconfig */,
+				ECEA020944F43A9DCF5DF8EB6E5DA476 /* SwiftyJSON-dummy.m */,
+				C1EB7A674F76A66D25DED8725F7C24E6 /* SwiftyJSON-prefix.pch */,
+				6CA69B68D163E8B649F0C8273CCA9D0F /* SwiftyJSON-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SwiftyJSON";
+			sourceTree = "<group>";
+		};
+		599324679DB5FCA6456FF8FC2F4761EE /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				15F49405BE1FBE3D96CBCA70A32B0523 /* Firebase.modulemap */,
+				68EE66DC4A54A17E7D8AEFE303F32032 /* Firebase.xcconfig */,
+				E281415854871673B3264F3891DB8F88 /* Firebase-dummy.m */,
+				D6719F381641EB6F9C5D7BF5B58F676D /* Firebase-prefix.pch */,
+				C9128158B7C79EB4679E1C856956121F /* Firebase-umbrella.h */,
+				AD66ABD36E6A8B77428D8EB31CC6DA6D /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Firebase";
+			sourceTree = "<group>";
+		};
+		755CBB15036708F85332959187BFEDDA /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				FA9D5125AD3C5372149A0DBBA688785E /* Info.plist */,
+				B3DB55CC7102E39453DA668BEF92051B /* SwiftDate.modulemap */,
+				963ED8797FD4736BFA2B69E97AE4D3C3 /* SwiftDate.xcconfig */,
+				8B0F5857F6B534348F7ABEC252F49614 /* SwiftDate-dummy.m */,
+				D648A611FB84A625D5EFEB33D93E04AB /* SwiftDate-prefix.pch */,
+				678200ADABD40C7A843DBC99D8B3B62D /* SwiftDate-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SwiftDate";
+			sourceTree = "<group>";
+		};
+		7C54546053AE5FF1E21D672FF1793264 /* SwiftyJSON */ = {
+			isa = PBXGroup;
+			children = (
+				9BCD570981D974F2DBA6B01F11B8CE7D /* SwiftyJSON.swift */,
+				522DD0E3101689E4D7F92EDBE19DA340 /* Support Files */,
+			);
+			path = SwiftyJSON;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */,
+				14B8B9B15ECBE87983FF987239AB2D7B /* Frameworks */,
+				99667E5B4AE5B91AFCF9312FC000F436 /* Pods */,
+				209D6F905CBD64BEF1A4A24A093FE2E6 /* Products */,
+				BDAD6FD800B71EEC0FC2D075E997C99B /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		843A690C4A272ACCFA5202DC4499C74E /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				60F85758B54CB0D843A3E97DFFB2F21F /* CFNetwork.framework */,
+				77C49D928448B31FB9A7D5AE5C8D6C4E /* Foundation.framework */,
+				C6204446BD9150A17B12E81B4A6F9CA8 /* Security.framework */,
+				6166BE40C18BC6BF0EED92CAB212EC33 /* SystemConfiguration.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		94E679D16283882117A1CF6792739975 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				B9155853A842058F2C4E7D5EB73D5017 /* Info.plist */,
+				8FF6A3A5BAF8773031507E9096D322BF /* SwiftOverlays.modulemap */,
+				5D2CA3DD5174F9331B92AB7C0C10E402 /* SwiftOverlays.xcconfig */,
+				DF09A2292534DC3848E64C0DF78556AE /* SwiftOverlays-dummy.m */,
+				F1C9CC3386190068782A59EAA10CD3EA /* SwiftOverlays-prefix.pch */,
+				9FEF2680E3A6BBE2200AE8D416D98952 /* SwiftOverlays-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SwiftOverlays";
+			sourceTree = "<group>";
+		};
+		99667E5B4AE5B91AFCF9312FC000F436 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D1AAB3DD1E4A13F19599D5122B7DF6FA /* Firebase */,
+				311DC0A1F0B6F6C9D4E9776942322C4E /* SwiftDate */,
+				9EB29904133687D148045734B5083940 /* SwiftOverlays */,
+				7C54546053AE5FF1E21D672FF1793264 /* SwiftyJSON */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		9EB29904133687D148045734B5083940 /* SwiftOverlays */ = {
+			isa = PBXGroup;
+			children = (
+				9E7390382B3AA5AB2BF6A4E3B979D7BA /* SwiftOverlays.swift */,
+				94E679D16283882117A1CF6792739975 /* Support Files */,
+			);
+			path = SwiftOverlays;
+			sourceTree = "<group>";
+		};
+		BDAD6FD800B71EEC0FC2D075E997C99B /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				221CDECA6972B173F27C6E4845735062 /* Pods-Breakfast Burrito Friday */,
+				BFF3A48D3623B5F6DD091AEE3501D5F4 /* Pods-Breakfast Burrito FridayTests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		BFF3A48D3623B5F6DD091AEE3501D5F4 /* Pods-Breakfast Burrito FridayTests */ = {
+			isa = PBXGroup;
+			children = (
+				158DB9C46916C192B72656A1A135AEC5 /* Info.plist */,
+				D98A3DF7C95F9FE3A008C93E86613E73 /* Pods-Breakfast Burrito FridayTests.modulemap */,
+				195C9F1FA4297B0CDA88FDFC2BE016A0 /* Pods-Breakfast Burrito FridayTests-acknowledgements.markdown */,
+				C95D0F22E6B59FA126D9AAD1099D3692 /* Pods-Breakfast Burrito FridayTests-acknowledgements.plist */,
+				553AFBC1C587D1B626266DE0BFD2189B /* Pods-Breakfast Burrito FridayTests-dummy.m */,
+				B318D662B982E55879B17A1DCC8572F6 /* Pods-Breakfast Burrito FridayTests-frameworks.sh */,
+				481CD6E65593E9E6CBE3D219E999E06C /* Pods-Breakfast Burrito FridayTests-resources.sh */,
+				FBC18675ECE954AC733BF61366018D98 /* Pods-Breakfast Burrito FridayTests-umbrella.h */,
+				D215B4DFA29CE8F0840EA0843A0A00C3 /* Pods-Breakfast Burrito FridayTests.debug.xcconfig */,
+				AEB414FED7E093CCA7A482440144DE53 /* Pods-Breakfast Burrito FridayTests.release.xcconfig */,
+			);
+			name = "Pods-Breakfast Burrito FridayTests";
+			path = "Target Support Files/Pods-Breakfast Burrito FridayTests";
+			sourceTree = "<group>";
+		};
+		D1AAB3DD1E4A13F19599D5122B7DF6FA /* Firebase */ = {
+			isa = PBXGroup;
+			children = (
+				3A915F37A9D23564E1F6B1378C742ED0 /* Empty.m */,
+				F7725776C9B337915A35BEE047C9C466 /* FAuthData.h */,
+				375481D7A8CF4AAE287008E74D1F9D63 /* FAuthType.h */,
+				91B2D5B22C7F6DBDCD00D93C47882C32 /* FConfig.h */,
+				C4086C9420D237A71D985D727E46AD5D /* FDataSnapshot.h */,
+				73E4CC0C6702370F5F1A4D216AC0D677 /* FEventType.h */,
+				401EBE57E44B58B52D448565793876E9 /* Firebase.h */,
+				8C3C90862A44687DDF41B1411AE5D6B7 /* FirebaseApp.h */,
+				E1E2ED0BD9B789EA20EE28D9A98D977D /* FirebaseServerValue.h */,
+				C39CBDDE47939FEEECDCF12F238148DE /* FMutableData.h */,
+				62D5DE9ED21910502A60A3DA1C33A234 /* FQuery.h */,
+				8EFFA9DB3AB0BAAB71E2C8FA36C5FD50 /* FTransactionResult.h */,
+				4D236B78AAF1FD7F9431461501DD227B /* Frameworks */,
+				599324679DB5FCA6456FF8FC2F4761EE /* Support Files */,
+			);
+			path = Firebase;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		18F0710A93D1D39D494CC767 /* Headers */ = {
+		04136C616B7D7F962010CB8EBD6B3865 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1F353A57BCCC24C9E53493A9 /* Pods-Breakfast Burrito Friday-umbrella.h in Headers */,
+				81226B463B2970C0A19B3A1DEC7F1149 /* SwiftyJSON-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		449F9455D593D9CFC32CF8CA /* Headers */ = {
+		2FDCAAB615C287D16BF7F1F2AA978246 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				634B97787D9D8CD1389D4E22 /* Pods-Breakfast Burrito FridayTests-SwiftyJSON-umbrella.h in Headers */,
+				C23FCF31260D47CEC1494A292DAA1A1E /* FAuthData.h in Headers */,
+				1D925BB011B04DDED982C7946571A67A /* FAuthType.h in Headers */,
+				E60FA42EEC3ECC48701DB55986D25D69 /* FConfig.h in Headers */,
+				E8B534D15D2B25919ACD898217266891 /* FDataSnapshot.h in Headers */,
+				239B10F388840841389B7F09648735B1 /* FEventType.h in Headers */,
+				60F9139BDD38565B78214C4FC5F5729D /* Firebase-umbrella.h in Headers */,
+				1C3EF85CD30E6FF2E51471BD5B3CEB29 /* Firebase.h in Headers */,
+				2F1496011DBBB75777645194AAAFE92D /* FirebaseApp.h in Headers */,
+				6646DA26298257396C7FFE141BB84CC3 /* FirebaseServerValue.h in Headers */,
+				DB05A9DD8244D10C28B6915C514AE15F /* FMutableData.h in Headers */,
+				4D75CF0089B20355B17A851513C4A002 /* FQuery.h in Headers */,
+				191DE2EB9A35585AE0A88BA9F833A1F4 /* FTransactionResult.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		51853C4E09493C192ED271BF /* Headers */ = {
+		3A4A1DB3E8056C58FC8E0942A3A6584F /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0D3772FBF2573577E9FF0ED7 /* Pods-Breakfast Burrito FridayTests-SwiftOverlays-umbrella.h in Headers */,
+				884780CCEC6F7251E7148AD9A2282538 /* SwiftOverlays-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5402D3A6B712D5516E4A466A /* Headers */ = {
+		3D0B4EBF532307CCBC8FF32BC214BEC9 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				65A2BE4C3C0E05DD4A8740B9 /* Pods-Breakfast Burrito FridayTests-umbrella.h in Headers */,
+				F869854ED104CD7FE281131A44005C36 /* Pods-Breakfast Burrito FridayTests-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		58327A1743EFD2FF87EE0AEA /* Headers */ = {
+		C584D6FB8C8B25EFF8BD69FEFB68B968 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C5E84F9AE8BAB48CF9CA5335 /* Pods-Breakfast Burrito Friday-SwiftyJSON-umbrella.h in Headers */,
+				7E1D6C03C812E0C4C9E836FBC3E401D4 /* Pods-Breakfast Burrito Friday-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		6EFCF346B8E60ECD8F9D5482 /* Headers */ = {
+		DA96E1FBCB2F22FCBFBD67F71EEFA24D /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9F973D793A401113CF9FC2A1 /* Pods-Breakfast Burrito FridayTests-SwiftDate-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		84C768792762153538332651 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				BFBEA9D520F2EE3241475C12 /* Pods-Breakfast Burrito Friday-SwiftDate-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		F94F17410790EDF70DE9AC17 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				66D6EDF4AA3C00AE85730A6B /* Pods-Breakfast Burrito Friday-SwiftOverlays-umbrella.h in Headers */,
+				F63506072B2B5B516682ECE3130E244F /* SwiftDate-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		020A84C8EC4A9BB2E2731F22 /* Pods-Breakfast Burrito FridayTests-SwiftyJSON */ = {
+		1F6EA06F0DA34F6956797DB0E36432FF /* Pods-Breakfast Burrito FridayTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 36B63DD38F51B52527A622CD /* Build configuration list for PBXNativeTarget "Pods-Breakfast Burrito FridayTests-SwiftyJSON" */;
+			buildConfigurationList = 0CFB103E63FC289F4D046EE26FA88544 /* Build configuration list for PBXNativeTarget "Pods-Breakfast Burrito FridayTests" */;
 			buildPhases = (
-				CA675763E80B624649765FEA /* Sources */,
-				1DE5ACC6278352CB87A5F321 /* Frameworks */,
-				449F9455D593D9CFC32CF8CA /* Headers */,
+				A47A6A2D0CC44EA5E519BFCAD9F9A416 /* Sources */,
+				5B041070E3F3D98692A95DEDD3CC09E1 /* Frameworks */,
+				3D0B4EBF532307CCBC8FF32BC214BEC9 /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-			);
-			name = "Pods-Breakfast Burrito FridayTests-SwiftyJSON";
-			productName = "Pods-Breakfast Burrito FridayTests-SwiftyJSON";
-			productReference = FDC917078A8688B1ED06CE02 /* SwiftyJSON.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		20A646160704BFEB84DB5EA0 /* Pods-Breakfast Burrito Friday-SwiftOverlays */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 1CE308BFB718E2D9E31852BB /* Build configuration list for PBXNativeTarget "Pods-Breakfast Burrito Friday-SwiftOverlays" */;
-			buildPhases = (
-				65D73B4F7E31551C2B91FF31 /* Sources */,
-				5E2C3DD9F607FC640222EC11 /* Frameworks */,
-				F94F17410790EDF70DE9AC17 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "Pods-Breakfast Burrito Friday-SwiftOverlays";
-			productName = "Pods-Breakfast Burrito Friday-SwiftOverlays";
-			productReference = C311C0EB6E4A9CBD4EC437F2 /* SwiftOverlays.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		3C10802196F22F1F18A2B4B1 /* Pods-Breakfast Burrito FridayTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = C55ACA0A437515C35BEBCDD1 /* Build configuration list for PBXNativeTarget "Pods-Breakfast Burrito FridayTests" */;
-			buildPhases = (
-				DE54BBC62CF9E1EB5E159880 /* Sources */,
-				44378DD328F3746EBEBE0788 /* Frameworks */,
-				5402D3A6B712D5516E4A466A /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				E703B40B08FFE94FF5C6D0BD /* PBXTargetDependency */,
-				C417F084EEFD7B997F164BD8 /* PBXTargetDependency */,
-				D990A21EC483CB0F50B0D121 /* PBXTargetDependency */,
+				6B3E71C4C01F1E3DD605C355CA7E2921 /* PBXTargetDependency */,
+				1A81F1FEC3249CED4A7DD4F6672BC57C /* PBXTargetDependency */,
+				84AC6F601CF1F292E391F2CBE8B54B22 /* PBXTargetDependency */,
+				2BCA7DD642DC026A59DDB52017D809A6 /* PBXTargetDependency */,
 			);
 			name = "Pods-Breakfast Burrito FridayTests";
 			productName = "Pods-Breakfast Burrito FridayTests";
-			productReference = 889A3BAE409FC208247D773E /* Pods_Breakfast_Burrito_FridayTests.framework */;
+			productReference = 732ED291F7C602B4503D6BC04001AC5C /* Pods_Breakfast_Burrito_FridayTests.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		508A1C63000DD2ABE8962801 /* Pods-Breakfast Burrito Friday-SwiftDate */ = {
+		B7AC9326D819482593FE118E915409D7 /* Firebase */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1B61DE37D5BF614D34917102 /* Build configuration list for PBXNativeTarget "Pods-Breakfast Burrito Friday-SwiftDate" */;
+			buildConfigurationList = 49B346C14D532324DCD14D0FA1347BC6 /* Build configuration list for PBXNativeTarget "Firebase" */;
 			buildPhases = (
-				17D7B9355A5808C39D3D715A /* Sources */,
-				C68213B2A575CEA356D9381A /* Frameworks */,
-				84C768792762153538332651 /* Headers */,
+				46E052D320E3B778B76D8393E0BAFE0F /* Sources */,
+				A7E10F383DCD59079712A57B50DCF88E /* Frameworks */,
+				2FDCAAB615C287D16BF7F1F2AA978246 /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "Pods-Breakfast Burrito Friday-SwiftDate";
-			productName = "Pods-Breakfast Burrito Friday-SwiftDate";
-			productReference = 36689653E2FC8EA41831CDEC /* SwiftDate.framework */;
+			name = Firebase;
+			productName = Firebase;
+			productReference = E13981908FCC3F7CE3DE00A4BCD2323B /* Firebase.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		674447D10E155265CB26A9AA /* Pods-Breakfast Burrito FridayTests-SwiftDate */ = {
+		B8535138ECA12A64197B2AF2AEF2E9DA /* SwiftOverlays */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 83B8D5FCA251242146D99AE2 /* Build configuration list for PBXNativeTarget "Pods-Breakfast Burrito FridayTests-SwiftDate" */;
+			buildConfigurationList = C95769D0EFE2CAE778492D5E3E29D4F0 /* Build configuration list for PBXNativeTarget "SwiftOverlays" */;
 			buildPhases = (
-				E39FAE8062E9870C24FA4437 /* Sources */,
-				7F295BDA8D6697374450926A /* Frameworks */,
-				6EFCF346B8E60ECD8F9D5482 /* Headers */,
+				BA0D04CDBA1FC67680EDBB0304AB8B34 /* Sources */,
+				55FCE630860ABD4690D703EE3607FE16 /* Frameworks */,
+				3A4A1DB3E8056C58FC8E0942A3A6584F /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "Pods-Breakfast Burrito FridayTests-SwiftDate";
-			productName = "Pods-Breakfast Burrito FridayTests-SwiftDate";
-			productReference = FA5F4534C1FD38CF9023C313 /* SwiftDate.framework */;
+			name = SwiftOverlays;
+			productName = SwiftOverlays;
+			productReference = E5F93FA86C30354B54C3FCF0AC1A74E9 /* SwiftOverlays.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		94FA2924BC123AA1EFB59798 /* Pods-Breakfast Burrito Friday-SwiftyJSON */ = {
+		DCDA167B99C091CD8B6414E60DA44519 /* SwiftDate */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D18D783A40A45BBDA2F9FA5B /* Build configuration list for PBXNativeTarget "Pods-Breakfast Burrito Friday-SwiftyJSON" */;
+			buildConfigurationList = BD8D0074AFBCF52FB07D0A0BDE0D839D /* Build configuration list for PBXNativeTarget "SwiftDate" */;
 			buildPhases = (
-				8A0263335A38F931CECFC22B /* Sources */,
-				A685EB005EB9016B21D87911 /* Frameworks */,
-				58327A1743EFD2FF87EE0AEA /* Headers */,
+				D3B4F6F266A7C3561148780804989D5D /* Sources */,
+				7E6A833D46503026D38224D93BDF4448 /* Frameworks */,
+				DA96E1FBCB2F22FCBFBD67F71EEFA24D /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "Pods-Breakfast Burrito Friday-SwiftyJSON";
-			productName = "Pods-Breakfast Burrito Friday-SwiftyJSON";
-			productReference = D8E9AC9D8960015B265331F2 /* SwiftyJSON.framework */;
+			name = SwiftDate;
+			productName = SwiftDate;
+			productReference = A54BBF6B5506190DB833B8746F394DBA /* SwiftDate.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		9DEFDF98DCF9B58C8896982C /* Pods-Breakfast Burrito Friday */ = {
+		E6C036D78B7D2C947D397A2A37027C78 /* Pods-Breakfast Burrito Friday */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = E0E225C35238FE602F80E1BA /* Build configuration list for PBXNativeTarget "Pods-Breakfast Burrito Friday" */;
+			buildConfigurationList = 646CC9E60A872119193B3318E82528FE /* Build configuration list for PBXNativeTarget "Pods-Breakfast Burrito Friday" */;
 			buildPhases = (
-				E07C658E8C2A0C57A27A3ABF /* Sources */,
-				012D1A71CC90CA275673BBD3 /* Frameworks */,
-				18F0710A93D1D39D494CC767 /* Headers */,
+				9456BE5C4BA23DCAD8BFA56BFDCF1FF1 /* Sources */,
+				328B15258D1964C51E94DA3471236D21 /* Frameworks */,
+				C584D6FB8C8B25EFF8BD69FEFB68B968 /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				BCDF2DB6B7700EDA8FB98A0F /* PBXTargetDependency */,
-				29A46B457441DDA475BD1BC1 /* PBXTargetDependency */,
-				C1CAC09C094C82AA483F6EF7 /* PBXTargetDependency */,
+				AEE505791C5A2159E66AFD056ACD0EED /* PBXTargetDependency */,
+				825A0502F32214E971BC9EFCB1D7753B /* PBXTargetDependency */,
+				0964864E231374DBBA0FBC9381D9A589 /* PBXTargetDependency */,
+				1B92B3E2A8CD3429D4745AD9FB46F948 /* PBXTargetDependency */,
 			);
 			name = "Pods-Breakfast Burrito Friday";
 			productName = "Pods-Breakfast Burrito Friday";
-			productReference = D10422A255A0C3533F76A4FF /* Pods_Breakfast_Burrito_Friday.framework */;
+			productReference = 9742A4BE75BD5A67AB6DEB1F7241425D /* Pods_Breakfast_Burrito_Friday.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		CF907CBDEDE85E868710EB08 /* Pods-Breakfast Burrito FridayTests-SwiftOverlays */ = {
+		EE4A35A3E58CD8CC4B24DE8CDC4A26D7 /* SwiftyJSON */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 4CDCB2BCF66D8CCB78A08EF3 /* Build configuration list for PBXNativeTarget "Pods-Breakfast Burrito FridayTests-SwiftOverlays" */;
+			buildConfigurationList = A5E8C006639C503CDEF493947E268870 /* Build configuration list for PBXNativeTarget "SwiftyJSON" */;
 			buildPhases = (
-				F58DB96AE4CC5889528ECE08 /* Sources */,
-				58B21CB2AD9D101A49DE9249 /* Frameworks */,
-				51853C4E09493C192ED271BF /* Headers */,
+				C27E7E020D8842D85F4598E421AA205C /* Sources */,
+				018EDA9B1D637D397EC217A060B28D33 /* Frameworks */,
+				04136C616B7D7F962010CB8EBD6B3865 /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "Pods-Breakfast Burrito FridayTests-SwiftOverlays";
-			productName = "Pods-Breakfast Burrito FridayTests-SwiftOverlays";
-			productReference = 7E40F5AE9BB94BCB15F3B680 /* SwiftOverlays.framework */;
+			name = SwiftyJSON;
+			productName = SwiftyJSON;
+			productReference = FE4D4D7C1BDC9D1D19F0D283B891FEF0 /* SwiftyJSON.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		4B6C58BF8CAA30D77B4DA090 /* Project object */ = {
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0640;
+				LastSwiftUpdateCheck = 0700;
+				LastUpgradeCheck = 0700;
 			};
-			buildConfigurationList = E3DB89438EA3D1AE4FAA6A9C /* Build configuration list for PBXProject "Pods" */;
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 			);
-			mainGroup = CFF1B33A618C9B9441CCCD67;
-			productRefGroup = 909EA5D78DD2D1B80FBA53BC /* Products */;
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 209D6F905CBD64BEF1A4A24A093FE2E6 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				9DEFDF98DCF9B58C8896982C /* Pods-Breakfast Burrito Friday */,
-				508A1C63000DD2ABE8962801 /* Pods-Breakfast Burrito Friday-SwiftDate */,
-				20A646160704BFEB84DB5EA0 /* Pods-Breakfast Burrito Friday-SwiftOverlays */,
-				94FA2924BC123AA1EFB59798 /* Pods-Breakfast Burrito Friday-SwiftyJSON */,
-				3C10802196F22F1F18A2B4B1 /* Pods-Breakfast Burrito FridayTests */,
-				674447D10E155265CB26A9AA /* Pods-Breakfast Burrito FridayTests-SwiftDate */,
-				CF907CBDEDE85E868710EB08 /* Pods-Breakfast Burrito FridayTests-SwiftOverlays */,
-				020A84C8EC4A9BB2E2731F22 /* Pods-Breakfast Burrito FridayTests-SwiftyJSON */,
+				B7AC9326D819482593FE118E915409D7 /* Firebase */,
+				E6C036D78B7D2C947D397A2A37027C78 /* Pods-Breakfast Burrito Friday */,
+				1F6EA06F0DA34F6956797DB0E36432FF /* Pods-Breakfast Burrito FridayTests */,
+				DCDA167B99C091CD8B6414E60DA44519 /* SwiftDate */,
+				B8535138ECA12A64197B2AF2AEF2E9DA /* SwiftOverlays */,
+				EE4A35A3E58CD8CC4B24DE8CDC4A26D7 /* SwiftyJSON */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		17D7B9355A5808C39D3D715A /* Sources */ = {
+		46E052D320E3B778B76D8393E0BAFE0F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E6D1091E195A2CFBA972A80A /* Pods-Breakfast Burrito Friday-SwiftDate-dummy.m in Sources */,
-				0F4DEE997645BA022BED61ED /* SwiftDate.swift in Sources */,
+				012A7E018F3D34F159894EBD7EACACF9 /* Empty.m in Sources */,
+				1D9D7FF5237C8CC91EF58DC45AC274FB /* Firebase-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		65D73B4F7E31551C2B91FF31 /* Sources */ = {
+		9456BE5C4BA23DCAD8BFA56BFDCF1FF1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A1D3FA698903497CCD8B794C /* Pods-Breakfast Burrito Friday-SwiftOverlays-dummy.m in Sources */,
-				DB5767E2B1335C0536AA1E02 /* SwiftOverlays.swift in Sources */,
+				F10652E469D5F43999880CA9592AC57E /* Pods-Breakfast Burrito Friday-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8A0263335A38F931CECFC22B /* Sources */ = {
+		A47A6A2D0CC44EA5E519BFCAD9F9A416 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				193D3E4D4EAFE4068242EF45 /* Pods-Breakfast Burrito Friday-SwiftyJSON-dummy.m in Sources */,
-				CAB958DF2A2BAC59CAFCD61F /* SwiftyJSON.swift in Sources */,
+				4176C5A050F2C584AFE2252A3A3CD1AF /* Pods-Breakfast Burrito FridayTests-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CA675763E80B624649765FEA /* Sources */ = {
+		BA0D04CDBA1FC67680EDBB0304AB8B34 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CB4830900DFFE00A490F92B1 /* Pods-Breakfast Burrito FridayTests-SwiftyJSON-dummy.m in Sources */,
-				2C1C17760CB4C2357BC89368 /* SwiftyJSON.swift in Sources */,
+				62D39CE5CAA592FA0B2500389850B331 /* SwiftOverlays-dummy.m in Sources */,
+				7918E1602AEB2EA4CA32BBB0F56E31D6 /* SwiftOverlays.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DE54BBC62CF9E1EB5E159880 /* Sources */ = {
+		C27E7E020D8842D85F4598E421AA205C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AA9A177CB1247E973370F976 /* Pods-Breakfast Burrito FridayTests-dummy.m in Sources */,
+				4BA0983B7D22D70473483F196332836C /* SwiftyJSON-dummy.m in Sources */,
+				5A895C0BD991742E31B8B1610B6114AE /* SwiftyJSON.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E07C658E8C2A0C57A27A3ABF /* Sources */ = {
+		D3B4F6F266A7C3561148780804989D5D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				25EE424027D4A730B0326D64 /* Pods-Breakfast Burrito Friday-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		E39FAE8062E9870C24FA4437 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				A5EC06AE525A6CFB2318B255 /* Pods-Breakfast Burrito FridayTests-SwiftDate-dummy.m in Sources */,
-				9D85C726B4BC8DADD01D2453 /* SwiftDate.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		F58DB96AE4CC5889528ECE08 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				793E540E083ADF65CA596CC6 /* Pods-Breakfast Burrito FridayTests-SwiftOverlays-dummy.m in Sources */,
-				BD98C62E4B73706BF094479D /* SwiftOverlays.swift in Sources */,
+				F831015561BE6158F4DAABF543B13511 /* Additions.swift in Sources */,
+				0AC2F1CB6E41AAC1F26656F9D97E3C45 /* DateInRegion+Comparisons.swift in Sources */,
+				89713D383E086CA3145190AAAD9C2B83 /* DateInRegion+Components.swift in Sources */,
+				C79F01AD1E5C46CD45FAF70241EE975F /* DateInRegion+Equations.swift in Sources */,
+				CCEEFC8D87792279A4DB3E0337CCA93E /* DateInRegion+Formatter.swift in Sources */,
+				80532B893C1492427B21E451109F4139 /* DateInRegion+NSDatePort.swift in Sources */,
+				3CCD7EC2397DD4F8F37E7E10180F3C5D /* DateInRegion+Operations.swift in Sources */,
+				0BEC241E1D24D97DAF30E384F49D73E7 /* DateInRegion+StartEnd.swift in Sources */,
+				CD2A2A3600F845028D88CED9848CA2B0 /* DateInRegion.swift in Sources */,
+				4F0B4E308F763D8B830FCF7521BF8109 /* Dictionary+SwiftDate.swift in Sources */,
+				11EFBC8269DDA20C01F1B13F266FB90F /* NSCalendar+SwiftDate.swift in Sources */,
+				4271CD8B46E714F19B5E7A3D0F1B1917 /* NSDate+SwiftDate.swift in Sources */,
+				83DF3490869B474CB566D0FBB811EF16 /* NSDateComponents+SwiftDate.swift in Sources */,
+				E1C16E6AE32FAA942AEABADC7C046F75 /* NSDateFormatter+SwiftDate.swift in Sources */,
+				1327BCA330A49BB1C68C43CE634AAD02 /* NSDateInterval.swift in Sources */,
+				3F365B737AE85566906FA3A75947C414 /* NSLocale+SwiftDate.swift in Sources */,
+				63D7C9932B465BA5537A7AFB06E2D027 /* NSTimeInterval+SwiftDate.swift in Sources */,
+				028B8F620B5C112D8D45C1E064F1665A /* NSTimeZone+SwiftDate.swift in Sources */,
+				F667521933AEE439B10E7EEEE28AB3A3 /* Region.swift in Sources */,
+				C1200A14AB9A4C90D0E7B8CDA85D8F38 /* SwiftDate-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		29A46B457441DDA475BD1BC1 /* PBXTargetDependency */ = {
+		0964864E231374DBBA0FBC9381D9A589 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = "Pods-Breakfast Burrito Friday-SwiftOverlays";
-			target = 20A646160704BFEB84DB5EA0 /* Pods-Breakfast Burrito Friday-SwiftOverlays */;
-			targetProxy = 736A34E2E59E8D7A1D1F044E /* PBXContainerItemProxy */;
+			name = SwiftOverlays;
+			target = B8535138ECA12A64197B2AF2AEF2E9DA /* SwiftOverlays */;
+			targetProxy = 8D9147EA4F22CC08E039F51D4CC6503B /* PBXContainerItemProxy */;
 		};
-		BCDF2DB6B7700EDA8FB98A0F /* PBXTargetDependency */ = {
+		1A81F1FEC3249CED4A7DD4F6672BC57C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = "Pods-Breakfast Burrito Friday-SwiftDate";
-			target = 508A1C63000DD2ABE8962801 /* Pods-Breakfast Burrito Friday-SwiftDate */;
-			targetProxy = 88D2241021E3762F7C253BCE /* PBXContainerItemProxy */;
+			name = SwiftDate;
+			target = DCDA167B99C091CD8B6414E60DA44519 /* SwiftDate */;
+			targetProxy = DF1E32102B16ED2748CCE5F4068FBB5B /* PBXContainerItemProxy */;
 		};
-		C1CAC09C094C82AA483F6EF7 /* PBXTargetDependency */ = {
+		1B92B3E2A8CD3429D4745AD9FB46F948 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = "Pods-Breakfast Burrito Friday-SwiftyJSON";
-			target = 94FA2924BC123AA1EFB59798 /* Pods-Breakfast Burrito Friday-SwiftyJSON */;
-			targetProxy = 64CCDA74B035D724135949DE /* PBXContainerItemProxy */;
+			name = SwiftyJSON;
+			target = EE4A35A3E58CD8CC4B24DE8CDC4A26D7 /* SwiftyJSON */;
+			targetProxy = 8A868CB1CF05DE2CA2A287189992A092 /* PBXContainerItemProxy */;
 		};
-		C417F084EEFD7B997F164BD8 /* PBXTargetDependency */ = {
+		2BCA7DD642DC026A59DDB52017D809A6 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = "Pods-Breakfast Burrito FridayTests-SwiftOverlays";
-			target = CF907CBDEDE85E868710EB08 /* Pods-Breakfast Burrito FridayTests-SwiftOverlays */;
-			targetProxy = 4159C4599CAC6D265180C695 /* PBXContainerItemProxy */;
+			name = SwiftyJSON;
+			target = EE4A35A3E58CD8CC4B24DE8CDC4A26D7 /* SwiftyJSON */;
+			targetProxy = 3626BCF0E0257D4D71B16435EEDF68D2 /* PBXContainerItemProxy */;
 		};
-		D990A21EC483CB0F50B0D121 /* PBXTargetDependency */ = {
+		6B3E71C4C01F1E3DD605C355CA7E2921 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = "Pods-Breakfast Burrito FridayTests-SwiftyJSON";
-			target = 020A84C8EC4A9BB2E2731F22 /* Pods-Breakfast Burrito FridayTests-SwiftyJSON */;
-			targetProxy = AA7F3CA3D30DC58435B927AE /* PBXContainerItemProxy */;
+			name = Firebase;
+			target = B7AC9326D819482593FE118E915409D7 /* Firebase */;
+			targetProxy = 254C6A4867083D4B3C77924C46DEC774 /* PBXContainerItemProxy */;
 		};
-		E703B40B08FFE94FF5C6D0BD /* PBXTargetDependency */ = {
+		825A0502F32214E971BC9EFCB1D7753B /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = "Pods-Breakfast Burrito FridayTests-SwiftDate";
-			target = 674447D10E155265CB26A9AA /* Pods-Breakfast Burrito FridayTests-SwiftDate */;
-			targetProxy = 657BE753B00F80FA9EA07A33 /* PBXContainerItemProxy */;
+			name = SwiftDate;
+			target = DCDA167B99C091CD8B6414E60DA44519 /* SwiftDate */;
+			targetProxy = 6DED078680DEE47C21F133372FAC544A /* PBXContainerItemProxy */;
+		};
+		84AC6F601CF1F292E391F2CBE8B54B22 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SwiftOverlays;
+			target = B8535138ECA12A64197B2AF2AEF2E9DA /* SwiftOverlays */;
+			targetProxy = 55B3AA7D143139238D51014D3104D6D9 /* PBXContainerItemProxy */;
+		};
+		AEE505791C5A2159E66AFD056ACD0EED /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Firebase;
+			target = B7AC9326D819482593FE118E915409D7 /* Firebase */;
+			targetProxy = F67C9C453EE62A43243005C8C8B853D9 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		06A71EC9D34EE3013F739D4D /* Debug */ = {
+		3A354A672A7FF1B414E7A1A441C53699 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = BFD629FFE1C2DD7090AD9661 /* Pods-Breakfast Burrito FridayTests-SwiftOverlays-Private.xcconfig */;
+			baseConfigurationReference = 68EE66DC4A54A17E7D8AEFE303F32032 /* Firebase.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -800,12 +840,100 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Pods-Breakfast Burrito FridayTests-SwiftOverlays/Pods-Breakfast Burrito FridayTests-SwiftOverlays-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Pods-Breakfast Burrito FridayTests-SwiftOverlays/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/Firebase/Firebase-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Firebase/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Pods-Breakfast Burrito FridayTests-SwiftOverlays/Pods-Breakfast Burrito FridayTests-SwiftOverlays.modulemap";
+				MODULEMAP_FILE = "Target Support Files/Firebase/Firebase.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = Firebase;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		51623CFC1C78CC093C4CC6D7B1E23249 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1728EEAD73D78F711DD9B9BDB7D89C52 /* Pods-Breakfast Burrito Friday.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-Breakfast Burrito Friday/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Breakfast Burrito Friday/Pods-Breakfast Burrito Friday.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_Breakfast_Burrito_Friday;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		5F2B39FA56991CC68243CC392620F7A4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D215B4DFA29CE8F0840EA0843A0A00C3 /* Pods-Breakfast Burrito FridayTests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-Breakfast Burrito FridayTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Breakfast Burrito FridayTests/Pods-Breakfast Burrito FridayTests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_Breakfast_Burrito_FridayTests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		6264F27C30F9C0407C0CB3E9146342CB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5D2CA3DD5174F9331B92AB7C0C10E402 /* SwiftOverlays.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftOverlays/SwiftOverlays-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftOverlays/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SwiftOverlays/SwiftOverlays.modulemap";
 				MTL_ENABLE_DEBUG_INFO = YES;
 				PRODUCT_NAME = SwiftOverlays;
 				SDKROOT = iphoneos;
@@ -817,9 +945,9 @@
 			};
 			name = Debug;
 		};
-		30CCADB67ED16020F63112FB /* Debug */ = {
+		7D013826FD65DA07B60F7E6418C90E4D /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1613248A2BD178AEF509D436 /* Pods-Breakfast Burrito FridayTests-SwiftyJSON-Private.xcconfig */;
+			baseConfigurationReference = 68EE66DC4A54A17E7D8AEFE303F32032 /* Firebase.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -828,26 +956,25 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Pods-Breakfast Burrito FridayTests-SwiftyJSON/Pods-Breakfast Burrito FridayTests-SwiftyJSON-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Pods-Breakfast Burrito FridayTests-SwiftyJSON/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/Firebase/Firebase-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Firebase/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Pods-Breakfast Burrito FridayTests-SwiftyJSON/Pods-Breakfast Burrito FridayTests-SwiftyJSON.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = SwiftyJSON;
+				MODULEMAP_FILE = "Target Support Files/Firebase/Firebase.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = Firebase;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Debug;
+			name = Release;
 		};
-		350C09CAC385C6D82E1B0D56 /* Debug */ = {
+		8209A1219C2220AA7504A80C93CE0EAD /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3B87765E9B5D199744B678DD /* Pods-Breakfast Burrito Friday-SwiftOverlays-Private.xcconfig */;
+			baseConfigurationReference = 5D2CA3DD5174F9331B92AB7C0C10E402 /* SwiftOverlays.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -856,52 +983,23 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Pods-Breakfast Burrito Friday-SwiftOverlays/Pods-Breakfast Burrito Friday-SwiftOverlays-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Pods-Breakfast Burrito Friday-SwiftOverlays/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftOverlays/SwiftOverlays-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftOverlays/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Pods-Breakfast Burrito Friday-SwiftOverlays/Pods-Breakfast Burrito Friday-SwiftOverlays.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
+				MODULEMAP_FILE = "Target Support Files/SwiftOverlays/SwiftOverlays.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_NAME = SwiftOverlays;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Debug;
+			name = Release;
 		};
-		4B0016EE58E9B525A47BE785 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9E5C92E1AF50F357BE56DC93 /* Pods-Breakfast Burrito FridayTests-SwiftDate-Private.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Pods-Breakfast Burrito FridayTests-SwiftDate/Pods-Breakfast Burrito FridayTests-SwiftDate-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Pods-Breakfast Burrito FridayTests-SwiftDate/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Pods-Breakfast Burrito FridayTests-SwiftDate/Pods-Breakfast Burrito FridayTests-SwiftDate.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = SwiftDate;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		5458B603AA5A68DB0AA06C55 /* Debug */ = {
+		9EB645C612834738B99727720210C23E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -940,36 +1038,9 @@
 			};
 			name = Debug;
 		};
-		7CF9018794A2FAB6AE654F40 /* Release */ = {
+		C9072BD475B38DA13F9EFB104AFDDF6A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = EF0B9CAAE9B5FD67F9910A71 /* Pods-Breakfast Burrito Friday-SwiftDate-Private.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Pods-Breakfast Burrito Friday-SwiftDate/Pods-Breakfast Burrito Friday-SwiftDate-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Pods-Breakfast Burrito Friday-SwiftDate/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Pods-Breakfast Burrito Friday-SwiftDate/Pods-Breakfast Burrito Friday-SwiftDate.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = SwiftDate;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		895A9ED7D38E76C9F4A9FECB /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = E27801DAA134549AE8A28AB9 /* Pods-Breakfast Burrito FridayTests.release.xcconfig */;
+			baseConfigurationReference = AEB414FED7E093CCA7A482440144DE53 /* Pods-Breakfast Burrito FridayTests.release.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -982,6 +1053,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-Breakfast Burrito FridayTests/Pods-Breakfast Burrito FridayTests.modulemap";
 				MTL_ENABLE_DEBUG_INFO = NO;
 				OTHER_LDFLAGS = "";
@@ -996,9 +1068,9 @@
 			};
 			name = Release;
 		};
-		8A9C972B0656511C2B677075 /* Debug */ = {
+		D1BF7A2CA72C564CB3A3A6CEC0817B72 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9B9D4C309FA021F5A281B03B /* Pods-Breakfast Burrito Friday.debug.xcconfig */;
+			baseConfigurationReference = 42E1744AD73C443615FD47F8B2F551A2 /* Pods-Breakfast Burrito Friday.debug.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -1011,6 +1083,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-Breakfast Burrito Friday/Pods-Breakfast Burrito Friday.modulemap";
 				MTL_ENABLE_DEBUG_INFO = YES;
 				OTHER_LDFLAGS = "";
@@ -1026,9 +1099,9 @@
 			};
 			name = Debug;
 		};
-		936D07C59B692683F210CC08 /* Release */ = {
+		DB7DE7700E6406E44DDCCBB1E9DEBB87 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1613248A2BD178AEF509D436 /* Pods-Breakfast Burrito FridayTests-SwiftyJSON-Private.xcconfig */;
+			baseConfigurationReference = AE274BC00837700CCBCBC85BD326B61E /* SwiftyJSON.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -1037,12 +1110,12 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Pods-Breakfast Burrito FridayTests-SwiftyJSON/Pods-Breakfast Burrito FridayTests-SwiftyJSON-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Pods-Breakfast Burrito FridayTests-SwiftyJSON/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftyJSON/SwiftyJSON-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftyJSON/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Pods-Breakfast Burrito FridayTests-SwiftyJSON/Pods-Breakfast Burrito FridayTests-SwiftyJSON.modulemap";
+				MODULEMAP_FILE = "Target Support Files/SwiftyJSON/SwiftyJSON.modulemap";
 				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_NAME = SwiftyJSON;
 				SDKROOT = iphoneos;
@@ -1053,9 +1126,9 @@
 			};
 			name = Release;
 		};
-		93E0B7DB526A8EFDCE9C892B /* Release */ = {
+		E06B2A72347160C82EA0328811EDF4B7 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = AAA1B708E2D5561BF5179633 /* Pods-Breakfast Burrito Friday.release.xcconfig */;
+			baseConfigurationReference = AE274BC00837700CCBCBC85BD326B61E /* SwiftyJSON.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -1064,164 +1137,24 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-Breakfast Burrito Friday/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftyJSON/SwiftyJSON-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftyJSON/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Pods-Breakfast Burrito Friday/Pods-Breakfast Burrito Friday.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_NAME = Pods_Breakfast_Burrito_Friday;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		94BFDB04C4A4207E92E8C960 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3B87765E9B5D199744B678DD /* Pods-Breakfast Burrito Friday-SwiftOverlays-Private.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Pods-Breakfast Burrito Friday-SwiftOverlays/Pods-Breakfast Burrito Friday-SwiftOverlays-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Pods-Breakfast Burrito Friday-SwiftOverlays/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Pods-Breakfast Burrito Friday-SwiftOverlays/Pods-Breakfast Burrito Friday-SwiftOverlays.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = SwiftOverlays;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		9F784B9718B6A2FF767E0F9A /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9E5C92E1AF50F357BE56DC93 /* Pods-Breakfast Burrito FridayTests-SwiftDate-Private.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Pods-Breakfast Burrito FridayTests-SwiftDate/Pods-Breakfast Burrito FridayTests-SwiftDate-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Pods-Breakfast Burrito FridayTests-SwiftDate/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Pods-Breakfast Burrito FridayTests-SwiftDate/Pods-Breakfast Burrito FridayTests-SwiftDate.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = SwiftDate;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		B0714C6084DE80D3ADF24E0F /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = EF0B9CAAE9B5FD67F9910A71 /* Pods-Breakfast Burrito Friday-SwiftDate-Private.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Pods-Breakfast Burrito Friday-SwiftDate/Pods-Breakfast Burrito Friday-SwiftDate-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Pods-Breakfast Burrito Friday-SwiftDate/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Pods-Breakfast Burrito Friday-SwiftDate/Pods-Breakfast Burrito Friday-SwiftDate.modulemap";
+				MODULEMAP_FILE = "Target Support Files/SwiftyJSON/SwiftyJSON.modulemap";
 				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = SwiftDate;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		BEEB26DE1B9B3DE6374E8661 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 80D0BB181122651FD89EB281 /* Pods-Breakfast Burrito FridayTests.debug.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-Breakfast Burrito FridayTests/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Pods-Breakfast Burrito FridayTests/Pods-Breakfast Burrito FridayTests.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_NAME = Pods_Breakfast_Burrito_FridayTests;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		D5380DE94945FA1D604C9F7F /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 986C32080E1B288D2ACCD06A /* Pods-Breakfast Burrito Friday-SwiftyJSON-Private.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Pods-Breakfast Burrito Friday-SwiftyJSON/Pods-Breakfast Burrito Friday-SwiftyJSON-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Pods-Breakfast Burrito Friday-SwiftyJSON/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Pods-Breakfast Burrito Friday-SwiftyJSON/Pods-Breakfast Burrito Friday-SwiftyJSON.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_NAME = SwiftyJSON;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Release;
+			name = Debug;
 		};
-		D5FFCD37B93B942EFF92F34E /* Release */ = {
+		E39CD1E764776175CB82EEC82A6C9948 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -1255,9 +1188,9 @@
 			};
 			name = Release;
 		};
-		E3A30E64741CADFCE9BBA88F /* Release */ = {
+		E87079125E532FFD46299217914CD2EC /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = BFD629FFE1C2DD7090AD9661 /* Pods-Breakfast Burrito FridayTests-SwiftOverlays-Private.xcconfig */;
+			baseConfigurationReference = 963ED8797FD4736BFA2B69E97AE4D3C3 /* SwiftDate.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -1266,14 +1199,14 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Pods-Breakfast Burrito FridayTests-SwiftOverlays/Pods-Breakfast Burrito FridayTests-SwiftOverlays-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Pods-Breakfast Burrito FridayTests-SwiftOverlays/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftDate/SwiftDate-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftDate/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Pods-Breakfast Burrito FridayTests-SwiftOverlays/Pods-Breakfast Burrito FridayTests-SwiftOverlays.modulemap";
+				MODULEMAP_FILE = "Target Support Files/SwiftDate/SwiftDate.modulemap";
 				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = SwiftOverlays;
+				PRODUCT_NAME = SwiftDate;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1282,9 +1215,9 @@
 			};
 			name = Release;
 		};
-		F8351D56DD2E23AB0A7005D9 /* Debug */ = {
+		F02C8B90B04C6CE5C6280B0A2DEAF57D /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 986C32080E1B288D2ACCD06A /* Pods-Breakfast Burrito Friday-SwiftyJSON-Private.xcconfig */;
+			baseConfigurationReference = 963ED8797FD4736BFA2B69E97AE4D3C3 /* SwiftDate.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -1293,14 +1226,14 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Pods-Breakfast Burrito Friday-SwiftyJSON/Pods-Breakfast Burrito Friday-SwiftyJSON-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Pods-Breakfast Burrito Friday-SwiftyJSON/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftDate/SwiftDate-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftDate/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Pods-Breakfast Burrito Friday-SwiftyJSON/Pods-Breakfast Burrito Friday-SwiftyJSON.modulemap";
+				MODULEMAP_FILE = "Target Support Files/SwiftDate/SwiftDate.modulemap";
 				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = SwiftyJSON;
+				PRODUCT_NAME = SwiftDate;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -1313,88 +1246,70 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		1B61DE37D5BF614D34917102 /* Build configuration list for PBXNativeTarget "Pods-Breakfast Burrito Friday-SwiftDate" */ = {
+		0CFB103E63FC289F4D046EE26FA88544 /* Build configuration list for PBXNativeTarget "Pods-Breakfast Burrito FridayTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				B0714C6084DE80D3ADF24E0F /* Debug */,
-				7CF9018794A2FAB6AE654F40 /* Release */,
+				5F2B39FA56991CC68243CC392620F7A4 /* Debug */,
+				C9072BD475B38DA13F9EFB104AFDDF6A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		1CE308BFB718E2D9E31852BB /* Build configuration list for PBXNativeTarget "Pods-Breakfast Burrito Friday-SwiftOverlays" */ = {
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				350C09CAC385C6D82E1B0D56 /* Debug */,
-				94BFDB04C4A4207E92E8C960 /* Release */,
+				9EB645C612834738B99727720210C23E /* Debug */,
+				E39CD1E764776175CB82EEC82A6C9948 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		36B63DD38F51B52527A622CD /* Build configuration list for PBXNativeTarget "Pods-Breakfast Burrito FridayTests-SwiftyJSON" */ = {
+		49B346C14D532324DCD14D0FA1347BC6 /* Build configuration list for PBXNativeTarget "Firebase" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				30CCADB67ED16020F63112FB /* Debug */,
-				936D07C59B692683F210CC08 /* Release */,
+				3A354A672A7FF1B414E7A1A441C53699 /* Debug */,
+				7D013826FD65DA07B60F7E6418C90E4D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		4CDCB2BCF66D8CCB78A08EF3 /* Build configuration list for PBXNativeTarget "Pods-Breakfast Burrito FridayTests-SwiftOverlays" */ = {
+		646CC9E60A872119193B3318E82528FE /* Build configuration list for PBXNativeTarget "Pods-Breakfast Burrito Friday" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				06A71EC9D34EE3013F739D4D /* Debug */,
-				E3A30E64741CADFCE9BBA88F /* Release */,
+				D1BF7A2CA72C564CB3A3A6CEC0817B72 /* Debug */,
+				51623CFC1C78CC093C4CC6D7B1E23249 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		83B8D5FCA251242146D99AE2 /* Build configuration list for PBXNativeTarget "Pods-Breakfast Burrito FridayTests-SwiftDate" */ = {
+		A5E8C006639C503CDEF493947E268870 /* Build configuration list for PBXNativeTarget "SwiftyJSON" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				4B0016EE58E9B525A47BE785 /* Debug */,
-				9F784B9718B6A2FF767E0F9A /* Release */,
+				E06B2A72347160C82EA0328811EDF4B7 /* Debug */,
+				DB7DE7700E6406E44DDCCBB1E9DEBB87 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C55ACA0A437515C35BEBCDD1 /* Build configuration list for PBXNativeTarget "Pods-Breakfast Burrito FridayTests" */ = {
+		BD8D0074AFBCF52FB07D0A0BDE0D839D /* Build configuration list for PBXNativeTarget "SwiftDate" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				BEEB26DE1B9B3DE6374E8661 /* Debug */,
-				895A9ED7D38E76C9F4A9FECB /* Release */,
+				F02C8B90B04C6CE5C6280B0A2DEAF57D /* Debug */,
+				E87079125E532FFD46299217914CD2EC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D18D783A40A45BBDA2F9FA5B /* Build configuration list for PBXNativeTarget "Pods-Breakfast Burrito Friday-SwiftyJSON" */ = {
+		C95769D0EFE2CAE778492D5E3E29D4F0 /* Build configuration list for PBXNativeTarget "SwiftOverlays" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				F8351D56DD2E23AB0A7005D9 /* Debug */,
-				D5380DE94945FA1D604C9F7F /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		E0E225C35238FE602F80E1BA /* Build configuration list for PBXNativeTarget "Pods-Breakfast Burrito Friday" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				8A9C972B0656511C2B677075 /* Debug */,
-				93E0B7DB526A8EFDCE9C892B /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		E3DB89438EA3D1AE4FAA6A9C /* Build configuration list for PBXProject "Pods" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				5458B603AA5A68DB0AA06C55 /* Debug */,
-				D5FFCD37B93B942EFF92F34E /* Release */,
+				6264F27C30F9C0407C0CB3E9146342CB /* Debug */,
+				8209A1219C2220AA7504A80C93CE0EAD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 4B6C58BF8CAA30D77B4DA090 /* Project object */;
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 }

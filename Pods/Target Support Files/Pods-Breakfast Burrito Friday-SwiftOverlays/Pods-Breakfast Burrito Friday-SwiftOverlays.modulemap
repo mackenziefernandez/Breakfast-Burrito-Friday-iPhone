@@ -1,6 +1,0 @@
-framework module SwiftOverlays {
-  umbrella header "Pods-Breakfast Burrito Friday-SwiftOverlays-umbrella.h"
-
-  export *
-  module * { export * }
-}
