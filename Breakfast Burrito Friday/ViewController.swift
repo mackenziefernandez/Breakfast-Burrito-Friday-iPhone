@@ -21,7 +21,7 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
     
     
     let tapRec = UITapGestureRecognizer() // Tap gesture inserted manually to the view
-    let burritoArray = ["Chorizo", "Sausage", "Bacon", "Cheese"]//, "Unicorn"]
+    let burritoArray = ["Chorizo", "Sausage", "Bacon", "Cheese"]
     var selectedFlavor = "Chorizo"
     
     let todayDate = NSDate()
@@ -61,8 +61,6 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
                         // Make an alert to gather the name
                         self.getNameAlert("What should I call you?", message: "I don't know what to call you! What's your name?", style: .Alert)
                     }
-                    
-                    
                     
                     }, withCancelBlock: { error2 in
                         print("error with finding name: \(error2)")
@@ -161,38 +159,8 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
     
     @IBAction func burritoMeButtonPressed(sender: UIButton) {
         
-        let gifsRef = myRootRef.childByAppendingPath("fun/gifs")
-        
-        gifsRef.observeSingleEventOfType(.Value, withBlock: { snapshot in
-            let jsonGifs = JSON(snapshot.value)
-            print(jsonGifs.count)
-            var gifURL = ""
-            let random = Int(arc4random_uniform(UInt32(jsonGifs.count)) + 1) // Since we are grabbing numbers between 0 and 2
-            var i = 1
-            for (key, value) in jsonGifs {
-                if (i == random) {
-                    print("random number is \(random)")
-                    print(key)
-                    print(value["url"])
-                    gifURL = value["url"].string!
-                    let url = NSURL(string: gifURL)
-        let data = NSData(contentsOfURL: url!)
-//                    self.showImageAndTextOverlay(PPSwiftGifs.animatedImageWithGIFData(data!)!, text: "\nYour burrito is on it's way!")
-                }
-                i += 1
-            }
-            
-            }, withCancelBlock: { error in
-                print(error.description)
-        })
-        
-        
-        
-//        self.confirmationImageView.image = PPSwiftGifs.animatedImageWithGIFData(data!)
-//        self.confirmationImageView.hidden = false
-        
-        
-        
+        self.showImageAndTextOverlay(PPSwiftGifs.animatedImageWithGIFNamed("bouncingpepper")!, text: "\nYour burrito is on it's way!")
+
         let userid: String = myRootRef.authData.uid as String
         
         let friday = thisFriday(todayDate)
@@ -200,14 +168,17 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
         let fridayString = friday.toString(DateFormat.Custom("YYYY-MM-dd"))
         
         let orderPath = "orders/" //+ fridayString
+        
         // Write data to Firebase
         let orderRef = myRootRef.childByAppendingPath(orderPath)
         let orderRef1 = orderRef.childByAutoId()
-        let theOrder = NSMutableDictionary(objects: [todayDate.toString(DateFormat.Custom("YY-MM-dd"))!, userid, selectedFlavor, fridayString!], forKeys: ["orderedDate", "uid", "flavor", "friday"])
+        let theOrder = NSMutableDictionary(objects:
+            [todayDate.toString(DateFormat.Custom("YY-MM-dd"))!, userid, selectedFlavor, fridayString!],
+            forKeys: ["orderedDate", "uid", "flavor", "friday"])
+        
         orderRef1.setValue(theOrder)
         
         
-        // Segue to see the orders they made (and can edit)
     }
 
 }

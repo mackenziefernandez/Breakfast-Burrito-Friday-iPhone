@@ -20,19 +20,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         
         // Check if user is logged in
-//        let fireRef = Firebase(url:"https://breakfastburritos.firebaseio.com/")
         Constants.fireRef.observeAuthEventWithBlock({ authData in
             if authData != nil {
                 print("The user logged in info is:")
                 print(authData)
                 
-                // self.window.rootViewController = [[UIStoryboard storyboardWithName:@"Main" bundle:[NSBundle mainBundle]] instantiateInitialViewController];
                 let storyboard = UIStoryboard(name: "Main", bundle: nil)
                 let vc = storyboard.instantiateViewControllerWithIdentifier("TabBarViewController") 
                 self.window?.rootViewController = vc
-                
-                //self.window?.rootViewController =
-                
             } else {
                 print("User is not logged in")
                 
@@ -42,33 +37,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             }
             
         })
-        
-//        // If the user is authenticated, then segue to the next view
-//        fireRef.authUser("mackenzie@dragondev.com", password: "burrito",
-//            withCompletionBlock: { error, authData in
-//                
-//                if error != nil {
-//                    // There was an error logging in to this account
-//                    println("There was an error")
-//                    println(error)
-//                    
-//                    var errorMessage = "Wow, nice job. I'm giving you a default error message because I don't even know what you did wrong."
-//                    if error.code == -6 {
-//                        errorMessage = "Take a look at that password again and make sure it's the right one!"
-//                    }
-//                    if error.code == -5 {
-//                        errorMessage = "Well that email certainly isn't right. Try again"
-//                    }
-//                    
-//                    
-//                } else {
-//                    // We are now logged in
-//                    println("Now logged in")
-//                    
-//                }
-//        })
-        
-        
         
         return true
     }

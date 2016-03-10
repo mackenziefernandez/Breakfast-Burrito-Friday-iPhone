@@ -37,6 +37,7 @@
 		59C4A8E81B61313D00D46B9C /* TeamViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59C4A8E71B61313D00D46B9C /* TeamViewController.swift */; };
 		988FC4591C8E930900D82FC6 /* Pods_Breakfast_Burrito_FridayTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 988FC4581C8E930900D82FC6 /* Pods_Breakfast_Burrito_FridayTests.framework */; };
 		988FC45B1C8F3FDF00D82FC6 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988FC45A1C8F3FDF00D82FC6 /* Constants.swift */; };
+		988FC45D1C90EA0100D82FC6 /* bouncingpepper.gif in Resources */ = {isa = PBXBuildFile; fileRef = 988FC45C1C90EA0100D82FC6 /* bouncingpepper.gif */; };
 		C450DAB91DD7689B37DC527B /* Pods_Breakfast_Burrito_FridayTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25BAD859BEB6BB2201D19E8A /* Pods_Breakfast_Burrito_FridayTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -94,6 +95,7 @@
 		7079D70288A083CEAE879C8A /* Pods-Breakfast Burrito FridayTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Breakfast Burrito FridayTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Breakfast Burrito FridayTests/Pods-Breakfast Burrito FridayTests.release.xcconfig"; sourceTree = "<group>"; };
 		988FC4581C8E930900D82FC6 /* Pods_Breakfast_Burrito_FridayTests.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Pods_Breakfast_Burrito_FridayTests.framework; path = "Pods/../build/Debug-iphoneos/Pods_Breakfast_Burrito_FridayTests.framework"; sourceTree = "<group>"; };
 		988FC45A1C8F3FDF00D82FC6 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		988FC45C1C90EA0100D82FC6 /* bouncingpepper.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = bouncingpepper.gif; sourceTree = "<group>"; };
 		A6461A706AACF31AB305697C /* Pods-Breakfast Burrito FridayTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Breakfast Burrito FridayTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Breakfast Burrito FridayTests/Pods-Breakfast Burrito FridayTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -192,6 +194,7 @@
 		59A825511AB3AE0E00017ED8 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				988FC45C1C90EA0100D82FC6 /* bouncingpepper.gif */,
 				59C4A8DF1B5F27C800D46B9C /* Burrito Me.png */,
 				59C4A8E01B5F27C800D46B9C /* Settings.png */,
 				59C4A8E11B5F27C800D46B9C /* Team.png */,
@@ -327,6 +330,7 @@
 				59A8255E1AB3AE0E00017ED8 /* Images.xcassets in Resources */,
 				598681201B54190300FE9FE2 /* RobotoCondensed-Light.ttf in Resources */,
 				59C4A8E31B5F27C800D46B9C /* Burrito Me.png in Resources */,
+				988FC45D1C90EA0100D82FC6 /* bouncingpepper.gif in Resources */,
 				598681221B54190300FE9FE2 /* RobotoCondensed-Regular.ttf in Resources */,
 				5986811D1B54190300FE9FE2 /* RobotoCondensed-Bold.ttf in Resources */,
 				5986811F1B54190300FE9FE2 /* RobotoCondensed-Italic.ttf in Resources */,

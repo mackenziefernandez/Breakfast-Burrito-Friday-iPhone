@@ -53,7 +53,7 @@ class BurritoTableViewController: UITableViewController {
         friday = thisFriday(todayDate)
         
         let fridayString = friday!.toString(DateFormat.Custom("YYYY-MM-dd"))
-        var fridayPath = myRootRef.childByAppendingPath("orders/")
+//        var fridayPath = myRootRef.childByAppendingPath("orders/")
         
         myRootRef.childByAppendingPath("orders").queryOrderedByChild("friday").queryEqualToValue(fridayString).observeEventType(.Value, withBlock: { snapshot in
             print(snapshot)
@@ -72,7 +72,7 @@ class BurritoTableViewController: UITableViewController {
         let json = JSON(snapshot.value)
         print(json)
         
-        for (key,subJson) in json {
+        for (_,subJson) in json {
             print(subJson)
             let flavor = subJson["flavor"].string
             let uid = subJson["uid"].string
@@ -118,7 +118,7 @@ class BurritoTableViewController: UITableViewController {
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete method implementation.
         // Return the number of rows in the section.
-        return self.orderDict.count
+        return self.orderDict.isEmpty ? 1 : self.orderDict.count
     }
     
     //UITableViewDelegate
@@ -127,20 +127,35 @@ class BurritoTableViewController: UITableViewController {
     }
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        
-        var keyArray = [String]()
-        
-        for (key, value) in self.orderDict {
-            keyArray.append(key)
-        }
-        print("orderDict empty?")
-        print(self.orderDict.isEmpty)
-        let valueArray = self.orderDict[keyArray[indexPath.row]]!
-        
-        //let bookDict = fetchedResultsController.objectAtIndexPath(indexPath) as BookModel
         let cell: BurritoTableViewCell = tableView.dequeueReusableCellWithIdentifier("cell") as! BurritoTableViewCell
-        cell.numberOfBurritosLabel.text = "\(self.orderDict[keyArray[indexPath.row]]!.count)" //self.orderDict[indexPath]!.count
-        cell.burritoFlavorLabel.text = "\(keyArray[indexPath.row])"
+        
+        if (!self.orderDict.isEmpty) {
+            var keyArray = [String]()
+            
+            for (key, _) in self.orderDict {
+                keyArray.append(key)
+            }
+            let valueArray = self.orderDict[keyArray[indexPath.row]]!
+
+            cell.numberOfBurritosLabel.text = "\(self.orderDict[keyArray[indexPath.row]]!.count)" //self.orderDict[indexPath]!.count
+            cell.burritoFlavorLabel.text = "\(keyArray[indexPath.row])"
+            
+            var whoOrderedText = ""
+            for (index, value) in valueArray.enumerate() {
+                if index == 0 {
+                    whoOrderedText = whoOrderedText + value
+                }
+                else {
+                    whoOrderedText = whoOrderedText + ", " + value
+                }
+            }
+            
+            cell.whoOrderedLabel.text = whoOrderedText
+        } else {
+            cell.numberOfBurritosLabel.text = "0"
+            cell.burritoFlavorLabel.text = "Burritos have been ordered"
+            cell.whoOrderedLabel.text = "Sad day"
+        }
         
         // First three names and then number for the additional names
         //        var count = 0
@@ -151,17 +166,7 @@ class BurritoTableViewController: UITableViewController {
         //            }
         //        }
         
-        var whoOrderedText = ""
-        for (index, value) in valueArray.enumerate() {
-            if index == 0 {
-                whoOrderedText = whoOrderedText + value
-            }
-            else {
-                whoOrderedText = whoOrderedText + ", " + value
-            }
-        }
-        
-        cell.whoOrderedLabel.text = whoOrderedText
+
         
         return cell
     }
