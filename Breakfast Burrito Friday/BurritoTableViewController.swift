@@ -40,10 +40,9 @@ class BurritoTableViewController: UITableViewController {
     var myRootRef = Constants.fireRef
     let todayDate = NSDate.today()
     var friday : NSDate?
-        var orderDict = [String: [String]]()
+    var orderDict = [String: [String]]()
     
     @IBOutlet var burritoTableView: UITableView!
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -53,7 +52,6 @@ class BurritoTableViewController: UITableViewController {
         friday = thisFriday(todayDate)
         
         let fridayString = friday!.toString(DateFormat.Custom("YYYY-MM-dd"))
-//        var fridayPath = myRootRef.childByAppendingPath("orders/")
         
         myRootRef.childByAppendingPath("orders").queryOrderedByChild("friday").queryEqualToValue(fridayString).observeEventType(.Value, withBlock: { snapshot in
             print(snapshot)
@@ -70,7 +68,6 @@ class BurritoTableViewController: UITableViewController {
         self.orderDict = [String: [String]]()
         
         let json = JSON(snapshot.value)
-        print(json)
         
         for (_,subJson) in json {
             print(subJson)
@@ -97,7 +94,6 @@ class BurritoTableViewController: UITableViewController {
                 }, withCancelBlock: { error2 in
                     print("error with finding name: \(error2)")
             })
-            
         }
         
         self.removeAllOverlays()
@@ -165,8 +161,6 @@ class BurritoTableViewController: UITableViewController {
         //                whoOrderedText += value + " and "
         //            }
         //        }
-        
-
         
         return cell
     }

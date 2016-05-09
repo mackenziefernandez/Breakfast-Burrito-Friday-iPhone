@@ -31,23 +31,6 @@ class UserSettingsViewController: UIViewController {
     }
     
     override func viewDidAppear(animated: Bool) {
-        // If the user is not authenticated, then make them log in
-        
-//        ref.observeAuthEventWithBlock({ authData in
-//            
-//            if authData != nil {
-//                // user authenticated with Firebase
-//                //println(myRootRef.authData)
-//                //println(myRootRef.authData.providerData["email"]!)
-//                //println(myRootRef.authData.providerData!)
-//            } else {
-//                // No user is logged in
-//                println("User is not logged in")
-//                
-//                // Segue (modally) to the login screen
-//                self.dismissViewControllerAnimated(true, completion: nil)
-//            }
-//        })
     }
 
     override func didReceiveMemoryWarning() {

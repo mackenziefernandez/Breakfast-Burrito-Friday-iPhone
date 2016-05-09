@@ -76,7 +76,6 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
                 //self.performSegueWithIdentifier("loginSegue", sender: self)
             }
         })
-
     }
     
     func displayAlert(title:String, message:String, style: UIAlertControllerStyle) {
@@ -117,7 +116,6 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
                 }
             })
         }))
-
         
         // 4. Present the alert.
         self.presentViewController(alert, animated: true, completion: nil)
@@ -158,27 +156,18 @@ class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSo
     }
     
     @IBAction func burritoMeButtonPressed(sender: UIButton) {
-        
         self.showImageAndTextOverlay(PPSwiftGifs.animatedImageWithGIFNamed("bouncingpepper")!, text: "\nYour burrito is on it's way!")
-
         let userid: String = myRootRef.authData.uid as String
-        
         let friday = thisFriday(todayDate)
         
-        let fridayString = friday.toString(DateFormat.Custom("YYYY-MM-dd"))
-        
-        let orderPath = "orders/" //+ fridayString
-        
         // Write data to Firebase
-        let orderRef = myRootRef.childByAppendingPath(orderPath)
+        let orderRef = myRootRef.childByAppendingPath("orders")
         let orderRef1 = orderRef.childByAutoId()
         let theOrder = NSMutableDictionary(objects:
-            [todayDate.toString(DateFormat.Custom("YY-MM-dd"))!, userid, selectedFlavor, fridayString!],
+            [todayDate.toString(DateFormat.Custom("M/d/YY h:m:ss a"))!, userid, selectedFlavor, friday.toString(DateFormat.Custom("YYYY-MM-dd"))!],
             forKeys: ["orderedDate", "uid", "flavor", "friday"])
         
         orderRef1.setValue(theOrder)
-        
-        
     }
 
 }

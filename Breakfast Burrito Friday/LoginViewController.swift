@@ -25,21 +25,7 @@ class LoginViewController: UIViewController {
     }
     
     override func viewDidAppear(animated: Bool) {
-        // If the user is not authenticated, then make them log in
         
-//        ref.observeAuthEventWithBlock({ authData in
-//            
-//            if authData != nil {
-//                // user authenticated with Firebase
-//                //self.dismissViewControllerAnimated(true, completion: nil)
-//            } else {
-//                // No user is logged in
-//                println("User is not logged in")
-//                
-//                // Segue (modally) to the login screen
-//                //self.dismissViewControllerAnimated(true, completion: nil)
-//            }
-//        })
     }
     
     @IBAction func forgotPasswordButtonPressed(sender: UIButton) {
@@ -75,12 +61,6 @@ class LoginViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
-    }
-    
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        if segue.identifier == "createLoginSegue" {
-            let createLogVC: CreateLoginViewController = segue.destinationViewController as! CreateLoginViewController
-        }
     }
     
     @IBAction func loginButtonPressed(sender: UIButton) {

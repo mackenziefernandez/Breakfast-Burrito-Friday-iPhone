@@ -70,14 +70,9 @@ class MyBurritosViewController: UIViewController {
     }
     
     func getOrders(userID : String) {
-        var fridayString = friday!.toString(DateFormat.Custom("YYYY-MM-dd"))
-        var ordersPath = myRootRef.childByAppendingPath("orders")
-        
         // Get all the burritos ordered by user
-        ordersPath.queryOrderedByChild("uid").queryEqualToValue(userID).observeEventType(.Value, withBlock: { snapshot in
-            
+        myRootRef.childByAppendingPath("orders").queryOrderedByChild("uid").queryEqualToValue(userID).observeEventType(.Value, withBlock: { snapshot in
                 self.getAllBurritos(snapshot)
-            
             }, withCancelBlock: { error in
                 print(error.description)
         })
@@ -92,11 +87,7 @@ class MyBurritosViewController: UIViewController {
         keyArray = [String]()
         
         for (key, value) in list {
-            //println("List in friday view")
-            
             if (value["friday"].string! == friday!.toString(DateFormat.Custom("YYYY-MM-dd"))) {
-                //println(value)
-                
                 let label = UILabel(frame: CGRectMake(self.thisFridayScrollView.bounds.origin.x + 5, self.thisFridayScrollView.bounds.origin.y + CGFloat(count*20), 100, 21))
                 label.text = value["flavor"].string
                 
@@ -112,8 +103,6 @@ class MyBurritosViewController: UIViewController {
                 count++
             }
         }
-        
-        
     }
     
     func buttonAction(sender:UIButton!) {
@@ -138,38 +127,29 @@ class MyBurritosViewController: UIViewController {
         var tag = 1
         
         for (key, subJson): (String, JSON) in allOrdersJson {
-            //println(subJson)
-            
-            // Separate out the ones for this friday and those not
-            
+            let flavor = subJson["flavor"].string!
 
-                    let flavor = subJson["flavor"].string!
-
-                    if totalsDict[flavor] != nil {
-                        // Flavor is already in the dictionary
-                        var arr = totalsDict[flavor]
-                        var burritoNum = arr![1]+1
+            if totalsDict[flavor] != nil {
+                // Flavor is already in the dictionary
+                var arr = totalsDict[flavor]
+                let burritoNum = arr![1]+1
                         
-                        totalsDict[flavor] = [arr![0],burritoNum]
+                totalsDict[flavor] = [arr![0],burritoNum]
                         
-                        var count = burritoNum/Int(snapshot.childrenCount)
-                        //println(count)
+                var count = burritoNum/Int(snapshot.childrenCount)
+            } else {
+                // Flavor is new
+                totalsDict[flavor] = [tag, 1]
                         
-                        //self.updateLabels(snapshot.childrenCount)
-                    } else {
-                        // Flavor is new
-                        totalsDict[flavor] = [tag, 1]
+                // Add a label for this flavor and the number (and the percent)
+                let label = UILabel(frame: CGRectMake(self.totalBurritosView.bounds.origin.x, self.totalBurritosView.bounds.origin.y + CGFloat(tag*20), 300, 21))
+                label.tag = tag
+                tag += 1
+                let percentText = 100*1/snapshot.childrenCount
+                label.text = "\(flavor): \(1) (\(CGFloat(percentText))%)"
                         
-                        // Add a label for this flavor and the number (and the percent)
-                        let label = UILabel(frame: CGRectMake(self.totalBurritosView.bounds.origin.x, self.totalBurritosView.bounds.origin.y + CGFloat(tag*20), 300, 21))
-                        label.tag = tag
-                        tag += 1
-                        let percentText = 100*1/snapshot.childrenCount
-                        label.text = "\(flavor): \(1) (\(CGFloat(percentText))%)"
-                        
-                        self.totalBurritosView.addSubview(label)
-                        
-                    }
+                self.totalBurritosView.addSubview(label)
+            }
         }
         self.addToFridayView(allOrdersJson)
         self.updateLabels(Int(snapshot.childrenCount))
@@ -185,7 +165,5 @@ class MyBurritosViewController: UIViewController {
         }
         
         self.removeAllOverlays()
-        
     }
-    
 }
