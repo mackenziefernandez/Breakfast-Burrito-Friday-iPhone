@@ -38,6 +38,7 @@ class BurritoTableViewController: UITableViewController {
     
     // Create a reference to a Firebase location
     var myRootRef = Constants.fireRef
+    
     let todayDate = NSDate.today()
     var friday : NSDate?
     var orderDict = [String: [String]]()
@@ -46,27 +47,21 @@ class BurritoTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         self.showWaitOverlay()
         
         friday = thisFriday(todayDate)
-        
         let fridayString = friday!.toString(DateFormat.Custom("YYYY-MM-dd"))
         
+        // Firebase query ordered by Friday, equal to the upcoming Friday
         myRootRef.childByAppendingPath("orders").queryOrderedByChild("friday").queryEqualToValue(fridayString).observeEventType(.Value, withBlock: { snapshot in
-            print(snapshot)
-            
-            self.setOrders(snapshot)
-            
+                self.setOrders(snapshot)
             }, withCancelBlock: { error in
                 print(error.description)
         })
     }
     
     func setOrders(snapshot: FDataSnapshot) {
-        // Make sure the order dictionary is empty before starting!
         self.orderDict = [String: [String]]()
-        
         let json = JSON(snapshot.value)
         
         for (_,subJson) in json {
@@ -79,7 +74,6 @@ class BurritoTableViewController: UITableViewController {
             myRootRef.childByAppendingPath(path).observeEventType(.Value, withBlock: {snapshot2 in
                 let jsonName = JSON(snapshot2.value)
                 let name = jsonName["name"].string
-                
                 if var arr = self.orderDict[flavor!] {
                     arr.append(name!)
                     self.orderDict[flavor!] = arr
@@ -87,10 +81,7 @@ class BurritoTableViewController: UITableViewController {
                 else {
                     self.orderDict[flavor!] = [name!]
                 }
-                
                 self.burritoTableView.reloadData()
-                
-                
                 }, withCancelBlock: { error2 in
                     print("error with finding name: \(error2)")
             })
@@ -119,7 +110,6 @@ class BurritoTableViewController: UITableViewController {
     
     //UITableViewDelegate
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath){
-        //performSegueWithIdentifier("showBookDetail", sender: self)
     }
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
@@ -145,22 +135,12 @@ class BurritoTableViewController: UITableViewController {
                     whoOrderedText = whoOrderedText + ", " + value
                 }
             }
-            
             cell.whoOrderedLabel.text = whoOrderedText
         } else {
             cell.numberOfBurritosLabel.text = "0"
             cell.burritoFlavorLabel.text = "Burritos have been ordered"
             cell.whoOrderedLabel.text = "Sad day"
         }
-        
-        // First three names and then number for the additional names
-        //        var count = 0
-        //        var whoOrderedText = ""
-        //        for value in self.orderDict[keyArray[indexPath.row]]! {
-        //            if count == 3 {
-        //                whoOrderedText += value + " and "
-        //            }
-        //        }
         
         return cell
     }
